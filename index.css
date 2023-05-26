@@ -1,0 +1,636 @@
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: 'Univers LT Std-XBlackObl';
+    src:url('../fonts/UniversLTStd-XBlackObl.otf') format('truetype');
+}
+
+/*
+.h1{
+    font-size: 65pt; 
+    color: rgb(255, 255, 255);
+    text-shadow: 0.7px 0.7px 0.7px rgb(255, 255, 255), 0 0 0.5em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
+    position: absolute;
+    transform: translate(0,-102px);
+    z-index: 3;
+}
+*/
+
+
+.section{
+    /*font-family:Univers LT Std-XBlackOb;*/
+    color: #ffffff;
+    /*text-shadow: 0.7px 0.7px 0.7px rgb(255, 255, 255), 0 0 0.5em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);*/
+    position: absolute;
+    transform: translate(0,-102px);
+    width:100%;
+    height: 0vh;
+    overflow: hidden;
+    white-space: nowrap;
+    z-index: 4;
+    
+}
+section::before
+{
+    content:"";
+    position:absolute;
+    top:0;
+    left :100px;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.scroll{
+    position: fixed;
+    font-family:Univers LT Std-XBlackObl;
+    text-shadow: 0.7px 0.7px 0.7px rgb(255, 255, 255), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
+    
+    width:calc(100%+400px);
+    left: 0px;
+    display:flex;
+    z-index: 5;
+    margin-top: -32px;
+}
+.scroll div{
+    position:absolute;
+    color:rgb(255, 255, 255);
+    font-size: 65pt;
+    
+    letter-spacing:0em;
+    white-space:nowrap;
+    animation: animate 60s linear infinite ;
+    
+    font-weight: 600;
+    z-index: 4;
+}
+.scroll div :nth-child(2)
+{
+    animation: animate-two 30s linear infinite ;
+    animation-delay: 0s;
+}
+@keyframes animate
+{
+    0%
+    {
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+
+.scroll-wrap {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+h2{
+    font-family:Univers LT Std-XBlackObl;
+    white-space: nowrap;
+    position: absolute;
+    transform: translate(0,-4px);
+    font-size: 65pt;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: black;
+    z-index: 2;
+}
+
+h3{
+    font-family:Univers LT Std-XBlackObl; 
+    font-size: 65pt;
+    position: absolute;
+    transform: translate(0,82px);
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: black;
+    z-index: 2;
+}
+
+h4{
+    font-family:Univers LT Std-XBlackObl; 
+    font-size: 65pt;
+    position: absolute;
+    transform: translate(0,153.5px);
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: black;
+    z-index: 2;
+}
+
+h5{
+    font-family:Univers LT Std-XBlackObl; 
+    font-size: 65pt;
+    position: absolute;
+    transform: translate(0,222px);
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: black;
+    z-index: 2;
+}
+
+h6{
+    font-family:Univers LT Std-XBlackObl; 
+    font-size: 65pt;
+    position: absolute;
+    transform: translate(0,267px);
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: black;
+    z-index: 2;
+}
+
+.one{
+    font-family:Univers LT Std-XBlackObl; 
+    font-size: 65pt;
+    position: absolute;
+    transform: translate(0,1469px);
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: black;
+    z-index: 2;
+}
+
+.two{
+    font-family:Univers LT Std-XBlackObl; 
+    font-size: 65pt;
+    position: absolute;
+    transform: translate(0,582px);
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: black;
+    z-index: 2;
+}
+
+.three{
+    font-family:Univers LT Std-XBlackObl; 
+    font-size: 65pt;
+    position: absolute;
+    transform: translate(0,682px);
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: black;
+    z-index: 2;
+}
+
+.four{
+    font-family:Univers LT Std-XBlackObl; 
+    font-size: 65pt;
+    position: absolute;
+    transform: translate(0,782px);
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: black;
+    z-index: 2;
+}
+
+.five{
+    font-family:Univers LT Std-XBlackObl; 
+    font-size: 65pt;
+    position: absolute;
+    transform: translate(0,882px);
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: black;
+    z-index: 2;
+}
+
+.six{
+    font-family:Univers LT Std-XBlackObl; 
+    font-size: 65pt;
+    position: absolute;
+    transform: translate(0,982px);
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: black;
+    z-index: 2;
+}
+
+.seven{
+    font-family:Univers LT Std-XBlackObl; 
+    font-size: 65pt;
+    position: absolute;
+    transform: translate(0,1182px);
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: black;
+    z-index: 2;
+}
+
+.eight{
+    font-family:Univers LT Std-XBlackObl; 
+    font-size: 65pt;
+    position: absolute;
+    transform: translate(0,1082px);
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: black;
+    z-index: 2;
+}
+
+.nine{
+    font-family:Univers LT Std-XBlackObl; 
+    font-size: 65pt;
+    position: absolute;
+    transform: translate(0,1282px);
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: black;
+    z-index: 2;
+}
+
+.ten{
+    font-family:Univers LT Std-XBlackObl; 
+    font-size: 65pt;
+    position: absolute;
+    transform: translate(0,482px);
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: black;
+    z-index: 2;
+}
+
+.eleven{
+    font-family:Univers LT Std-XBlackObl; 
+    font-size: 65pt;
+    position: absolute;
+    transform: translate(0,1482px);
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: black;
+    z-index: 2;
+}
+
+.twelve{
+    font-family:Univers LT Std-XBlackObl; 
+    font-size: 65pt;
+    position: absolute;
+    transform: translate(0,1582px);
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: black;
+    z-index: 2;  
+}
+
+@font-face {
+    font-family: 'UniversLTStd-Obl';
+    src:url('../fonts/UniversLTStd-Obl.otf') format('truetype');
+}
+
+.sen1{
+    font-family: UniversLTStd-Obl;
+    font-size: 18pt;
+    position: absolute;
+    transform: translate(990px,111px);
+    color: black;
+    z-index: 2;
+}
+
+.sen2{
+    font-family:Univers LT Std-XBlackObl;
+    font-size: 18pt;
+    position: absolute;
+    transform: translate(945px,209px);
+    color: black;
+    z-index: 2;
+}
+
+.sen3{
+    font-family: UniversLTStd-Obl;
+    font-size: 18pt;
+    position: absolute;
+    transform: translate(700px,311px);
+    color: black;
+    z-index: 2;
+}
+
+.sen4{
+    font-family: UniversLTStd-Obl;
+    font-size: 18pt;
+    position: absolute;
+    transform: translate(760px,411px);
+    color: black;
+    z-index: 2;
+}
+
+.sen5{
+    font-family: UniversLTStd-Obl;
+    font-size: 18pt;
+    position: absolute;
+    transform: translate(885px,511px);
+    color: black;
+    z-index: 2;
+}
+
+.sen6{
+    font-family:UniversLTStd-Obl;
+    font-size: 18pt;
+    position: absolute;
+    transform: translate(748px,582px);
+    color: black;
+    z-index: 2;
+}
+
+.sen7{
+    font-family:UniversLTStd-Obl;
+    font-size: 18pt;
+    position: absolute;
+    transform: translate(783px,683px);
+    color: black;
+    z-index: 2;
+}
+
+.sen8{
+    font-family:UniversLTStd-Obl;
+    font-size: 18pt;
+    position: absolute;
+    transform: translate(792px,811px);
+    color: black;
+    z-index: 2;
+}
+
+.sen9{
+    font-family:UniversLTStd-Obl;
+    font-size: 18pt;
+    position: absolute;
+    transform: translate(750px,882px);
+    color: black;
+    z-index:2;
+}
+
+.sen10{
+    font-family:UniversLTStd-Obl;
+    font-size: 18pt;
+    position: absolute;
+    transform: translate(1001px,1011px);
+    color: black;
+    z-index:2;
+}
+
+.sen11{
+    font-family:UniversLTStd-Obl;
+    font-size: 18pt;
+    position: absolute;
+    transform: translate(975px,1111px);
+    color: black;
+    z-index:2;
+}
+
+.sen12{
+    font-family:UniversLTStd-Obl;
+    font-size: 18pt;
+    position: absolute;
+    transform: translate(770px,1211px);
+    color: black;
+    z-index:2;
+}
+
+.sen13{
+    font-family:UniversLTStd-Obl;
+    font-size: 18pt;
+    position: absolute;
+    transform: translate(900px,1311px);
+    color: black;
+    z-index:2;
+}
+
+.sen14{
+    font-family:UniversLTStd-Obl;
+    font-size: 18pt;
+    position: absolute;
+    transform: translate(965px,1382px);
+    color: black;
+    z-index:2;
+}
+
+
+.sen15{
+    font-family:UniversLTStd-Obl;
+    font-size: 18pt;
+    position: absolute;
+    transform: translate(820px,1482px);
+    color: black;
+    z-index:2;
+}
+
+.sen16{
+    font-family:UniversLTStd-Obl;
+    font-size: 18pt;
+    position: absolute;
+    transform: translate(952px,1582px);
+    color: black;
+    z-index:2;
+}
+
+.sen17{
+    font-family:UniversLTStd-Obl;
+    font-size: 18pt;
+    position: absolute;
+    transform: translate(935px,1710px);
+    color: black;
+    z-index:2;
+}
+
+
+
+
+
+
+
+
+#square{
+    width: 1620px;
+    height: 100px;
+    position: absolute;
+    transform: translate(-100px,57px);
+    background: rgb(198, 198, 198);
+    overflow-x: hidden;
+    z-index: -1;
+
+}
+
+#square1{
+    width: 1620px;
+    height: 100px;
+    position: absolute;
+    transform: translate(-100px,157px);
+    background: rgb(0, 164, 255);
+    overflow: hidden;
+    z-index: -1;
+
+}
+
+#square2{
+    width: 1620px;
+    height: 100px;
+    position: absolute;
+    transform: translate(-100px,257px);
+    background: rgb(255, 44, 150);
+    overflow: hidden;
+    z-index: -1;
+
+}
+
+#square3{
+    width: 1620px;
+    height: 100px;
+    position: absolute;
+    transform: translate(-100px,357px);
+    background: rgb(255, 224, 0);
+    overflow: hidden;
+    z-index: -1;
+
+}
+
+#square4{
+    width: 1620px;
+    height: 100px;
+    position: absolute;
+    transform: translate(-100px,457px);
+    background: rgb(0, 164, 255);
+    overflow: hidden;
+    z-index: -1;
+
+}
+
+#square5{
+    width: 1620px;
+    height: 100px;
+    position: absolute;
+    transform: translate(-100px,557px);
+    background: rgb(205,0, 225);
+    overflow: hidden;
+    z-index: -1;
+
+}
+
+#square6{
+    width: 1620px;
+    height: 100px;
+    position: absolute;
+    transform: translate(-100px,657px);
+    background: rgb(0, 164, 255);
+    overflow: hidden;
+    z-index: -1;
+
+}
+
+#square7{
+    width: 1620px;
+    height: 100px;
+    position: absolute;
+    transform: translate(-100px,757px);
+    background: rgb(255, 44, 150);
+    overflow: hidden;
+    z-index: -1;
+}
+
+#square8{
+    width: 1620px;
+    height: 100px;
+    position: absolute;
+    transform: translate(-100px,856.8px);
+    background: rgb(255, 44, 150);
+    overflow: hidden;
+    z-index: -1;
+}
+
+#square9{
+    width: 1620px;
+    height: 100px;
+    position: absolute;
+    transform: translate(-100px,957px);
+    background: rgb(255, 244, 0);
+    overflow: hidden;
+    z-index: -1;
+}
+
+#square10{
+    width: 1620px;
+    height: 100px;
+    position: absolute;
+    transform: translate(-100px,1057px);
+    background: rgb(205, 0, 255);
+    overflow: hidden;
+    z-index: -1;
+}
+
+#square11{
+    width: 1620px;
+    height: 100px;
+    position: absolute;
+    transform: translate(-100px,1157px);
+    background: rgb(0, 164, 255);
+    overflow: hidden;
+    z-index: -1;
+}
+
+#square12{
+    width: 1620px;
+    height: 100px;
+    position: absolute;
+    transform: translate(-100px,1257px);
+    background: rgb(205, 0, 255);
+    overflow: hidden;
+    z-index: -1;
+}
+
+#square13{
+    width: 1620px;
+    height: 100px;
+    position: absolute;
+    transform: translate(-100px,1357px);
+    background: rgb(255, 44, 150);
+    overflow: hidden;
+    z-index: -1;
+}
+
+#square14{
+    width: 1620px;
+    height: 100px;
+    position: absolute;
+    transform: translate(-100px,1457px);
+    background: rgb(255, 244, 0);
+    overflow: hidden;
+    z-index: -1;
+}
+
+#square15{
+    width: 1620px;
+    height: 100px;
+    position: absolute;
+    transform: translate(-100px,1557px);
+    background: rgb(182, 244, 3);
+    overflow: hidden;
+    z-index: -1;
+}
+
+#square16{
+    width: 1620px;
+    height: 100px;
+    position: absolute;
+    transform: translate(-100px,1657px);
+    background: rgb(108, 143, 5);
+    z-index: -1;
+}
+
+
+
+
+
+
+  
+
+
+
+
+
+
