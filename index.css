@@ -8,7 +8,7 @@
 
 @font-face {
     font-family:'Univers LT Std-XBlackObl';
-    src:url('../fonts/UniversLTStd-XBlackObl.otf')
+    src:url('font/UniversLTStd-XBlackObl.otf')
 }
 
 /*
@@ -282,43 +282,43 @@ h6{
 
 @font-face {
     font-family:'UniversLTStd-Obl';
-    src:url('../fonts/UniversLTStd-Obl.otf');
+    src:url('font/UniversLTStd-Obl.otf');
 }
 
 .sen1{
     font-family:'UniversLTStd-Obl';
     font-style: oblique;
-    font-size: 18pt;
+    font-size: 16.5pt;
     position: absolute;
-    transform: translate(990px,111px);
-    color: black;
+    transform: translate(1390px,112px);
+    color: rgb(255, 255, 255);
     z-index: 2;
 }
 
 .sen2{
     font-family:'UniversLTStd-Obl';
-    font-size: 18pt;
+    font-size: 16.5pt;
     position: absolute;
-    transform: translate(945px,209px);
-    color: black;
+    transform: translate(1390px,212px);
+    color: rgb(255, 255, 255);
     z-index: 2;
 }
 
 .sen3{
     font-family:'UniversLTStd-Obl';
-    font-size: 18pt;
+    font-size: 16.5pt;
     position: absolute;
-    transform: translate(700px,311px);
-    color: black;
+    transform: translate(1390px,312px);
+    color: rgb(255, 255, 255);
     z-index: 2;
 }
 
 .sen4{
     font-family:'UniversLTStd-Obl';
-    font-size: 18pt;
+    font-size: 16.5pt;
     position: absolute;
-    transform: translate(760px,411px);
-    color: black;
+    transform: translate(1390px,412px);
+    color: rgb(255, 255, 255);
     z-index: 2;
 }
 
