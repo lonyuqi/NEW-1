@@ -7,8 +7,8 @@
 
 
 @font-face {
-    font-family: 'Univers LT Std-XBlackObl';
-    src:url('../fonts/UniversLTStd-XBlackObl.otf') format('truetype');
+    font-family:'Univers LT Std-XBlackObl';
+    src:url('../fonts/UniversLTStd-XBlackObl.otf')
 }
 
 /*
@@ -49,7 +49,7 @@ section::before
 
 .scroll{
     position: fixed;
-    font-family:Univers LT Std-XBlackObl;
+    font-family:'Univers LT Std-XBlackObl';
     text-shadow: 0.7px 0.7px 0.7px rgb(255, 255, 255), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
     
     width:calc(100%+400px);
@@ -93,7 +93,7 @@ section::before
 }
 
 h2{
-    font-family:Univers LT Std-XBlackObl;
+    font-family:'Univers LT Std-XBlackObl';
     white-space: nowrap;
     position: absolute;
     transform: translate(0,-4px);
@@ -105,7 +105,7 @@ h2{
 }
 
 h3{
-    font-family:Univers LT Std-XBlackObl; 
+    font-family:'Univers LT Std-XBlackObl'; 
     font-size: 65pt;
     position: absolute;
     transform: translate(0,82px);
@@ -116,7 +116,7 @@ h3{
 }
 
 h4{
-    font-family:Univers LT Std-XBlackObl; 
+    font-family:'Univers LT Std-XBlackObl'; 
     font-size: 65pt;
     position: absolute;
     transform: translate(0,153.5px);
@@ -127,7 +127,7 @@ h4{
 }
 
 h5{
-    font-family:Univers LT Std-XBlackObl; 
+    font-family:'Univers LT Std-XBlackObl'; 
     font-size: 65pt;
     position: absolute;
     transform: translate(0,222px);
@@ -138,7 +138,7 @@ h5{
 }
 
 h6{
-    font-family:Univers LT Std-XBlackObl; 
+    font-family:'Univers LT Std-XBlackObl'; 
     font-size: 65pt;
     position: absolute;
     transform: translate(0,267px);
@@ -149,7 +149,7 @@ h6{
 }
 
 .one{
-    font-family:Univers LT Std-XBlackObl; 
+    font-family:'Univers LT Std-XBlackObl'; 
     font-size: 65pt;
     position: absolute;
     transform: translate(0,1469px);
@@ -160,7 +160,7 @@ h6{
 }
 
 .two{
-    font-family:Univers LT Std-XBlackObl; 
+    font-family:'Univers LT Std-XBlackObl'; 
     font-size: 65pt;
     position: absolute;
     transform: translate(0,582px);
@@ -171,7 +171,7 @@ h6{
 }
 
 .three{
-    font-family:Univers LT Std-XBlackObl; 
+    font-family:'Univers LT Std-XBlackObl'; 
     font-size: 65pt;
     position: absolute;
     transform: translate(0,682px);
@@ -182,7 +182,7 @@ h6{
 }
 
 .four{
-    font-family:Univers LT Std-XBlackObl; 
+    font-family:'Univers LT Std-XBlackObl'; 
     font-size: 65pt;
     position: absolute;
     transform: translate(0,782px);
@@ -193,7 +193,7 @@ h6{
 }
 
 .five{
-    font-family:Univers LT Std-XBlackObl; 
+    font-family:'Univers LT Std-XBlackObl'; 
     font-size: 65pt;
     position: absolute;
     transform: translate(0,882px);
@@ -204,7 +204,7 @@ h6{
 }
 
 .six{
-    font-family:Univers LT Std-XBlackObl; 
+    font-family:'Univers LT Std-XBlackObl'; 
     font-size: 65pt;
     position: absolute;
     transform: translate(0,982px);
@@ -215,7 +215,7 @@ h6{
 }
 
 .seven{
-    font-family:Univers LT Std-XBlackObl; 
+    font-family:'Univers LT Std-XBlackObl'; 
     font-size: 65pt;
     position: absolute;
     transform: translate(0,1182px);
@@ -226,7 +226,7 @@ h6{
 }
 
 .eight{
-    font-family:Univers LT Std-XBlackObl; 
+    font-family:'Univers LT Std-XBlackObl'; 
     font-size: 65pt;
     position: absolute;
     transform: translate(0,1082px);
@@ -237,7 +237,7 @@ h6{
 }
 
 .nine{
-    font-family:Univers LT Std-XBlackObl; 
+    font-family:'Univers LT Std-XBlackObl'; 
     font-size: 65pt;
     position: absolute;
     transform: translate(0,1282px);
@@ -248,7 +248,7 @@ h6{
 }
 
 .ten{
-    font-family:Univers LT Std-XBlackObl; 
+    font-family:'Univers LT Std-XBlackObl'; 
     font-size: 65pt;
     position: absolute;
     transform: translate(0,482px);
@@ -259,7 +259,7 @@ h6{
 }
 
 .eleven{
-    font-family:Univers LT Std-XBlackObl; 
+    font-family:'Univers LT Std-XBlackObl'; 
     font-size: 65pt;
     position: absolute;
     transform: translate(0,1482px);
@@ -270,7 +270,7 @@ h6{
 }
 
 .twelve{
-    font-family:Univers LT Std-XBlackObl; 
+    font-family:'Univers LT Std-XBlackObl'; 
     font-size: 65pt;
     position: absolute;
     transform: translate(0,1582px);
@@ -281,12 +281,13 @@ h6{
 }
 
 @font-face {
-    font-family: 'UniversLTStd-Obl';
-    src:url('../fonts/UniversLTStd-Obl.otf') format('truetype');
+    font-family:'UniversLTStd-Obl';
+    src:url('../fonts/UniversLTStd-Obl.otf');
 }
 
 .sen1{
-    font-family: UniversLTStd-Obl;
+    font-family:'UniversLTStd-Obl';
+    font-style: oblique;
     font-size: 18pt;
     position: absolute;
     transform: translate(990px,111px);
@@ -295,7 +296,7 @@ h6{
 }
 
 .sen2{
-    font-family:Univers LT Std-XBlackObl;
+    font-family:'UniversLTStd-Obl';
     font-size: 18pt;
     position: absolute;
     transform: translate(945px,209px);
@@ -304,7 +305,7 @@ h6{
 }
 
 .sen3{
-    font-family: UniversLTStd-Obl;
+    font-family:'UniversLTStd-Obl';
     font-size: 18pt;
     position: absolute;
     transform: translate(700px,311px);
@@ -313,7 +314,7 @@ h6{
 }
 
 .sen4{
-    font-family: UniversLTStd-Obl;
+    font-family:'UniversLTStd-Obl';
     font-size: 18pt;
     position: absolute;
     transform: translate(760px,411px);
@@ -322,7 +323,7 @@ h6{
 }
 
 .sen5{
-    font-family: UniversLTStd-Obl;
+    font-family:'UniversLTStd-Obl';
     font-size: 18pt;
     position: absolute;
     transform: translate(885px,511px);
@@ -331,7 +332,7 @@ h6{
 }
 
 .sen6{
-    font-family:UniversLTStd-Obl;
+    font-family:'UniversLTStd-Obl';
     font-size: 18pt;
     position: absolute;
     transform: translate(748px,582px);
@@ -340,7 +341,7 @@ h6{
 }
 
 .sen7{
-    font-family:UniversLTStd-Obl;
+    font-family:'UniversLTStd-Obl';
     font-size: 18pt;
     position: absolute;
     transform: translate(783px,683px);
@@ -349,7 +350,7 @@ h6{
 }
 
 .sen8{
-    font-family:UniversLTStd-Obl;
+    font-family:'UniversLTStd-Obl';
     font-size: 18pt;
     position: absolute;
     transform: translate(792px,811px);
@@ -358,7 +359,7 @@ h6{
 }
 
 .sen9{
-    font-family:UniversLTStd-Obl;
+    font-family:'UniversLTStd-Obl';
     font-size: 18pt;
     position: absolute;
     transform: translate(750px,882px);
@@ -367,7 +368,7 @@ h6{
 }
 
 .sen10{
-    font-family:UniversLTStd-Obl;
+    font-family:'UniversLTStd-Obl';
     font-size: 18pt;
     position: absolute;
     transform: translate(1001px,1011px);
@@ -376,7 +377,7 @@ h6{
 }
 
 .sen11{
-    font-family:UniversLTStd-Obl;
+    font-family:'UniversLTStd-Obl';
     font-size: 18pt;
     position: absolute;
     transform: translate(975px,1111px);
@@ -385,7 +386,7 @@ h6{
 }
 
 .sen12{
-    font-family:UniversLTStd-Obl;
+    font-family:'UniversLTStd-Obl';
     font-size: 18pt;
     position: absolute;
     transform: translate(770px,1211px);
@@ -394,7 +395,7 @@ h6{
 }
 
 .sen13{
-    font-family:UniversLTStd-Obl;
+    font-family:'UniversLTStd-Obl';
     font-size: 18pt;
     position: absolute;
     transform: translate(900px,1311px);
@@ -403,7 +404,7 @@ h6{
 }
 
 .sen14{
-    font-family:UniversLTStd-Obl;
+    font-family:'UniversLTStd-Obl';
     font-size: 18pt;
     position: absolute;
     transform: translate(965px,1382px);
@@ -413,7 +414,7 @@ h6{
 
 
 .sen15{
-    font-family:UniversLTStd-Obl;
+    font-family:'UniversLTStd-Obl';
     font-size: 18pt;
     position: absolute;
     transform: translate(820px,1482px);
@@ -422,7 +423,7 @@ h6{
 }
 
 .sen16{
-    font-family:UniversLTStd-Obl;
+    font-family:'UniversLTStd-Obl';
     font-size: 18pt;
     position: absolute;
     transform: translate(952px,1582px);
@@ -431,7 +432,7 @@ h6{
 }
 
 .sen17{
-    font-family:UniversLTStd-Obl;
+    font-family:'UniversLTStd-Obl';
     font-size: 18pt;
     position: absolute;
     transform: translate(935px,1710px);
@@ -618,7 +619,7 @@ h6{
     height: 100px;
     position: absolute;
     transform: translate(-100px,1657px);
-    background: rgb(108, 143, 5);
+    background: rgb(182, 244, 3);
     z-index: -1;
 }
 
