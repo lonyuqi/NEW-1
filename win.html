@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Virtual wishing fountain</title>
+		<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="#" />
+    <link rel="stylesheet" href="win.css" />
+    <script src="windows.js"></script>
+
+  </head>
+  <body>
+    
+<section>
+  <div class="scroll" style="--d:25;--y:200;">
+    <div>
+      <span>Welcome to Phoebe's website. You can reach me on Gmail: longyuqi124@gmail.com or Wechat: Y18982234763</span>
+    </div>
+  </div>
+</section>
+
+  <div class="slider-container">
+    <div class="slider-content">
+        <img class="slider-item" src="./images1/win-1.jpg" alt="Image 1">
+        <img class="slider-item" src="./images1/win-2.jpg" alt="Image 2">
+        <img class="slider-item" src="./images1/win-3.jpg" alt="Image 3">
+        <img class="slider-item" src="./images1/win-4.jpg" alt="Image 3">
+        <img class="slider-item" src="./images1/win-5.jpg" alt="Image 3">
+        <img class="slider-item" src="./images1/win-6.jpg" alt="Image 3">
+        <img class="slider-item" src="./images1/win-7.jpg" alt="Image 3">
+        <img class="slider-item" src="./images1/win-8.jpg" alt="Image 3">
+        <img class="slider-item" src="./images1/win-9.jpg" alt="Image 3">
+        <img class="slider-item" src="./images1/win-10.jpg" alt="Image 3">
+        <img class="slider-item" src="./images1/win-11.jpg" alt="Image 3">
+        <img class="slider-item" src="./images1/win-12.jpg" alt="Image 3">
+        
+    </div>
+</div>
+
+
+<h2 class="h2">roundsharp</h2>
+<h3 class="h3">personal identy</h3>
+<h4 class="h4">the widows</h4>
+<h5 class="h5">36.5°C</h5>
+
+<p class="name2">advisor : Qin yu Wu</p>
+<p class="name1">author : phoebe</p>
+<p class="intro">This project is about a large number of photos that will be coded on the Internet, especially when girls share their lives and show their bodies. And because of these censorship mechanisms and the stare at women’s bodies, girls have to put cute stickers on pretty pictures to cover up the so called “vulgar” parts.</p>
+
+<h6 class="h6">utopia</h6>
+<h7 class="one">me</h7>
+<p class="two">shizhi</p>
+<p class="three">clear craze</p>
+<p class="four">stickers</p>
+<p class="five">old book exchange</p>
+<p class="six">virtual wish</p>
+<p class="seven">breaking</p>
+<p class="eight">404 not found</p>
+<p class="nine">shape of memory</p>
+<p class="ten">plants plants!</p>
+<p class="eleven">no tag on me</p>
+<p class="twelve">phoebe's website</p>
+
+  <p class="sen1">Typography(2022)</p>
+  <p class="sen2">Branding(2021)</p>
+ <!--<p class="sen3">Book(2021)</p>-->
+  <p class="sen4">Space(2022)</p>
+  <p class="sen5">Branding(2022)</p>
+  <p class="sen6">Video(2021)</p>
+  <p class="sen7">Branding(2022)</p>
+  <p class="sen8">Book(2022)</p>
+  <p class="sen9">Book(2023)</p>
+  <p class="sen10">Space(2022)</p>
+  <p class="sen11">Website(2023)</p>
+  <p class="sen12">Branding(2022)</p>
+  <p class="sen13">Video(2022)</p>
+  <p class="sen14">Book(2022)</p>
+  <p class="sen15">Space(2022)</p>
+  <p class="sen16">Video(2022)</p>
+  <p class="sen17">Website(2023)</p>
+  
+
+  <div id="square" onclick="location.href='./roundsharp.html'"></div>
+  <div id="square1" onclick="location.href='./identy.html'"></div>
+  <div id="square2"></div>
+  <div id="square3" onclick="location.href='./36.5.html'"></div>
+  <div id="square4" onclick="location.href='./utopia.html'"></div>
+  <div id="square5" onclick="location.href='./me.html'"></div>
+  <div id="square6" onclick="location.href='shizhi.html'"></div>
+  <div id="square7" onclick="location.href='clear.html'"></div>
+  <div id="square8"></div>
+  <div id="square9"></div>
+  <div id="square10"></div>
+  <div id="square11"></div>
+  <div id="square12"></div>
+  <div id="square13"></div>
+  <div id="square14"></div>
+  <div id="square15"></div>
+  <div id="square16"></div>
+  <div id="square17" onclick="this.style.display='none'"></div>
+
+  
+  
+
+  <script>
+    const sliderContainer = document.querySelector('.slider-container');
+    
+    // 监听滑动手势
+    let touchStartX = 0;
+    let touchEndX = 0;
+    
+    sliderContainer.addEventListener('touchstart', (e) => {
+        touchStartX = e.touches[0].clientX;
+    });
+    
+    sliderContainer.addEventListener('touchmove', (e) => {
+        touchEndX = e.touches[0].clientX;
+    });
+    
+    sliderContainer.addEventListener('touchend', () => {
+        if (touchEndX - touchStartX > 50) {
+            sliderContainer.scrollLeft -= 300; // 向前滑动一个图片项的宽度加外边距
+        } else if (touchStartX - touchEndX > 50) {
+            sliderContainer.scrollLeft += 300; // 向后滑动一个图片项的宽度加外边距
+        }
+    });
+</script>
+
+  </body>
+</html>
