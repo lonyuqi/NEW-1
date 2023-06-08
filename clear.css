@@ -3,13 +3,26 @@
        -moz-box-sizing: border-box;
             box-sizing: border-box;
   }
+  .slider-container {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
   
+  .slider-container::-webkit-scrollbar {
+    display: none;
+  }
+  body{
+    width: 1630px;
+    height: 0px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
   .slider-container {
     width: 61%; /* 设置容器宽度 */
     overflow-x: scroll;
     white-space: nowrap; /* 禁止换行 */
     position: relative; /* 设置容器为固定定位 */
-    top: 808px; /* 设置容器相对于页面顶部的距离 */
+    top: 792px; /* 设置容器相对于页面顶部的距离 */
     left: 600px; /* 设置容器相对于页面左侧的距离 */
     /*border: 1px solid #ccc; /* 添加边框样式 */
     padding: 10px; /* 添加内边距 */
@@ -56,7 +69,7 @@
       height: 0vh;
       overflow: hidden;
       white-space: nowrap;
-      z-index: 6;
+      z-index: 7;
       
   }
   section::before
@@ -78,7 +91,7 @@
       width:calc(100%+400px);
       left: 0px;
       display:flex;
-      z-index: 6;
+      z-index: 7;
       margin-top: -32px;
   }
   .scroll div{
@@ -91,7 +104,7 @@
       animation: animate 60s linear infinite ;
       
       font-weight: 600;
-      z-index: 6;
+      z-index: 7;
   }
   .scroll div :nth-child(2)
   {
@@ -229,11 +242,11 @@
 }
 
   .intro{
-    font-family:'Helvetica-regular';
+    font-family: Helvetica, sans-serif;
     font-size: 16.5pt;
     width: 35%;
     position: absolute;
-    transform: translate(0,500px);
+    transform: translate(0,550px);
     color: #ffffff;
    /* text-shadow: 0.7px 0.7px 0.7px rgb(66, 66, 66), 0 0 1em rgb(66, 66, 66), 0 0 2em rgb(66, 66, 66);*/
     z-index: 4;
@@ -524,13 +537,15 @@
     width: 910px;
     height: 455px;
     background-color: rgb(255, 44, 150);
-    opacity: 0.5;
+    opacity: 0.8;
     position: relative;
     top: 323px;
     left: 610px;
-    z-index: 5;
+    z-index: 6;
+    transition: opacity 0.3s ease;
   }
   
+
   #square{
       width: 1620px;
       height: 100px;
@@ -538,7 +553,7 @@
       transform: translate(-100px,-503px);
       background: rgb(198, 198, 198);
       overflow-x: hidden;
-      z-index: -1;
+      z-index: 1;
   
   }
   
@@ -549,7 +564,7 @@
       transform: translate(-100px,-403px);
       background: rgb(0, 164, 255);
       overflow: hidden;
-      z-index: -1;
+      z-index: 1;
   
   }
   
@@ -560,7 +575,7 @@
       transform: translate(-100px,-303px);
       background: rgb(255, 44, 150);
       overflow: hidden;
-      z-index: -1;
+      z-index: 1;
   
   }
   
@@ -571,7 +586,7 @@
       transform: translate(-100px,-203px);
       background: rgb(255, 224, 0);
       overflow: hidden;
-      z-index: -1;
+      z-index: 1;
   
   }
   
@@ -582,7 +597,7 @@
       transform: translate(-100px,-103px);
       background: rgb(0, 164, 255);
       overflow: hidden;
-      z-index: -1;
+      z-index: 1;
   
   }
   
@@ -593,7 +608,7 @@
       transform: translate(-100px,-3px);
       background: rgb(251, 0, 255);
       overflow: hidden;
-      z-index: -1;
+      z-index: 1;
   
   }
   
@@ -604,7 +619,7 @@
       transform: translate(-100px,97px);
       background: rgb(0, 164, 255);
       overflow: hidden;
-      z-index: -1;
+      z-index: 1;
   
   }
   
@@ -623,9 +638,9 @@
       height: 100px;
       position: absolute;
       transform: translate(-100px,797px);
-      background: rgb(255, 44, 150);
+      background: rgb(255, 224, 0);
       overflow: hidden;
-      z-index: -1;
+      z-index: 1;
   }
   
   #square9{
@@ -633,9 +648,9 @@
       height: 100px;
       position: absolute;
       transform: translate(-100px,897px);
-      background: rgb(255, 224, 0);
+      background: rgb(255, 44, 150);
       overflow: hidden;
-      z-index: -1;
+      z-index: 1;
   }
   
   #square10{
@@ -645,7 +660,7 @@
       transform: translate(-100px,997px);
       background: rgb(117, 243, 255);
       overflow: hidden;
-      z-index: -1;
+      z-index: 1;
   }
   
   #square11{
@@ -655,7 +670,7 @@
       transform: translate(-100px,1097px);
       background: rgb(0, 164, 255);
       overflow: hidden;
-      z-index: -1;
+      z-index: 1;
   }
   
   #square12{
@@ -665,7 +680,7 @@
       transform: translate(-100px,1197px);
       background: rgb(251, 0, 255);
       overflow: hidden;
-      z-index: -1;
+      z-index: 1;
   }
   
   #square13{
@@ -675,7 +690,7 @@
       transform: translate(-100px,1297px);
       background: rgb(255, 44, 150);
       overflow: hidden;
-      z-index: -1;
+      z-index: 1;
   }
   
   #square14{
@@ -683,9 +698,9 @@
       height: 100px;
       position: absolute;
       transform: translate(-100px,1397px);
-      background: rgb(255, 224, 0);
+      background: rgb(0, 164, 255);
       overflow: hidden;
-      z-index: -1;
+      z-index: 1;
   }
   
   #square15{
@@ -695,7 +710,7 @@
       transform: translate(-100px,1497px);
       background: rgb(251, 0, 255);
       overflow: hidden;
-      z-index: -1;
+      z-index: 1;
   }
   
   #square16{
@@ -704,5 +719,5 @@
       position: absolute;
       transform: translate(-100px,1597px);
       background: rgb(117, 243, 255);
-      z-index: -1;
+      z-index: 1;
   }

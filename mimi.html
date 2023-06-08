@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Virtual wishing fountain</title>
+		<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="#" />
+    <link rel="stylesheet" href="mimi.css" />
+    
+
+  </head>
+  <body>
+    
+<section>
+  <div class="scroll" style="--d:25;--y:200;">
+    <div>
+      <span>Welcome to Phoebe's website. You can reach me on Gmail: longyuqi124@gmail.com or Wechat: Y18982234763</span>
+    </div>
+  </div>
+</section>
+<div class="slider-container">
+  <div class="slider-content">
+      <img class="slider-item" src="./images1/old-1.jpg" alt="Image 1">
+      <img class="slider-item" src="./images1/old-2.jpg" alt="Image 2">
+      <img class="slider-item" src="./images1/old-3.jpg" alt="Image 3">
+      <img class="slider-item" src="./images1/old-4.jpg" alt="Image 3">
+      <img class="slider-item" src="./images1/old-5.jpg" alt="Image 3">
+      <img class="slider-item" src="./images1/old-6.jpg" alt="Image 3">
+      <img class="slider-item" src="./images1/old-7.jpg" alt="Image 3">
+      <img class="slider-item" src="./images1/old-8.jpg" alt="Image 3">
+      <img class="slider-item" src="./images1/old-9.jpg" alt="Image 3">
+  </div>
+</div>
+
+<h2 class="h2">roundsharp</h2>
+<h3 class="h3">personal identy</h3>
+<h4 class="h4">the widows</h4>
+<h5 class="h5">36.5°C</h5>
+<h6 id="utopia-text" class="h6">utopia</h6>
+<h7 id="me-text" class="one">me</h7>
+<p id="shizhi-text" class="two">shizhi</p>
+<p id="clear-text"class="three">clear craze</p>
+<p id="oldbook-text" class="four">old book exchange</p>
+
+<p id="stickers-text" class="five">stickers</p>
+
+<p class="name2">advisor : XUXU</p>
+<p class="name1">author : phoebe / jane / kira / para / loki / dudu</p>
+<p class="intro">This project is a user experience design for pet foster shops on the market. Aiming at the multiple loopholes in the service link of pet foster shop and the common pain points of pet shop consumers. We designed a brand. Unlike most pet stores on the market, we only provide pet foster care services. In the user experience design section, the focus of the experience is on foster care: pet owners can see their pets all the time. And services after foster care.</p>
+
+<p id="wish-text"class="six">virtual wish</p>
+<p id="breaking-text"class="seven">breaking</p>
+<p id="404-text" class="eight">404 not found</p>
+<p id="shape-text" class="nine">shape of memory</p>
+<p id="mimi-text" class="ten">Mimiwoof</p>
+<p id="no tag-text" class="eleven">no tag on me</p>
+<p id="website-text" class="twelve">phoebe's website</p>
+
+  <p class="sen1">Typography(2022)</p>
+  <p class="sen2">Branding(2021)</p>
+  <p class="sen3">Book(2021)</p>
+  <p class="sen4">Space(2022)</p>
+  <p class="sen5">Branding(2022)</p>
+  <p class="sen6">Video(2021)</p>
+  <p class="sen7">Branding(2022)</p>
+  <p class="sen8">Book(2022)</p>
+  <p class="sen9">Book(2023)</p>
+  <p class="sen10">Space(2022)</p>
+  <p class="sen11">Website(2023)</p>
+  <p class="sen12">Branding(2022)</p>
+  <p class="sen13">Video(2022)</p>
+  <p class="sen14">Book(2022)</p>
+  <!--<p class="sen15">Space(2022)</p>-->
+  <p class="sen16">Video(2022)</p>
+  <p class="sen17">Website(2023)</p>
+  
+
+  <div id="square" onclick="location.href='./roundsharp.html'"></div>
+  <div id="square1" onclick="location.href='./identy.html'"></div>
+  <div id="square2" onclick="location.href='./windows.html'"></div>
+  <div id="square3" onclick="location.href='./36.5.html'"></div>
+  <div id="square4" onclick="location.href='./utopia.html#utopia-text'"></div>
+  <div id="square5" onclick="location.href='./me.html#me-text'"></div>
+  <div id="square6" onclick="location.href='shizhi.html#shizhi-text'"></div>
+  <div id="square7" onclick="location.href='clear.html#clear-text'"></div>
+  <div id="square8" onclick="location.href='oldbbook.html#oldbook-text'"></div>
+  <div id="square9" onclick="location.href='stickers.html#stickers-text'"></div>
+  <div id="square10" onclick="location.href='wish.html#wish-text'"></div>
+  <div id="square11" onclick="location.href='breaking.html#breaking-text'"></div>
+  <div id="square12" onclick="location.href='404.html#404-text'"></div>
+  <div id="square13" onclick="location.href='shape.html#shape-text'"></div>
+  <div id="square14"></div>
+  <div id="square15" onclick="location.href='no tag.html#no tag-text'"></div>
+  <div id="square16" onclick="location.href='website.html#website-text'"></div>
+  <div id="square17"></div>
+   
+  <script>
+    const sliderContainer = document.querySelector('.slider-container');
+    
+    // 监听滑动手势
+    let touchStartX = 0;
+    let touchEndX = 0;
+    
+    sliderContainer.addEventListener('touchstart', (e) => {
+        touchStartX = e.touches[0].clientX;
+    });
+    
+    sliderContainer.addEventListener('touchmove', (e) => {
+        touchEndX = e.touches[0].clientX;
+    });
+    
+    sliderContainer.addEventListener('touchend', () => {
+        if (touchEndX - touchStartX > 50) {
+            sliderContainer.scrollLeft -= 300; // 向前滑动一个图片项的宽度加外边距
+        } else if (touchStartX - touchEndX > 50) {
+            sliderContainer.scrollLeft += 300; // 向后滑动一个图片项的宽度加外边距
+        }
+    });
+
+    var square = document.getElementById("square17");
+var isHovered = false;
+
+square.addEventListener("mouseenter", function() {
+  if (!isHovered) {
+    square.style.display = "none"; /* 隐藏矩形 */
+    isHovered = true; /* 设置鼠标悬浮标记为true */
+  }
+});
+
+square.addEventListener("mouseleave", function() {
+  if (isHovered) {
+    square.style.display = "none"; /* 鼠标离开时继续隐藏矩形 */
+  }
+});
+
+</script>
+
+  </body>
+</html>

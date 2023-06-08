@@ -4,31 +4,55 @@
        -moz-box-sizing: border-box;
             box-sizing: border-box;
   }
+
+  .slider-container {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  
+  .slider-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  body{
+    width: 1630px;
+    height: 0px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
   .slider-container {
     width: 61%; /* 设置容器宽度 */
     overflow-x: scroll;
     white-space: nowrap; /* 禁止换行 */
     position: relative; /* 设置容器为固定定位 */
-    top: 490px; /* 设置容器相对于页面顶部的距离 */
-    left: 600px; /* 设置容器相对于页面左侧的距离 */
+    top: 490px;
+    left: 600px;
     /*border: 1px solid #ccc; /* 添加边框样式 */
-    padding: 10px; /* 添加内边距 */
+    padding: 10px;
     z-index: 5;
+    border-radius: 10px;
 }
+
+
 
 .slider-item {
-    display: inline-block; /* 横向排列 */
-    width: 680px; /* 设置每个图片项的宽度 */
-    height: 453.36px; /* 设置每个图片项的高度 */
-    margin-right: 0px; /* 设置右侧外边距，调整图片之间的间距 */
-    background-color: #f0f0f0; /* 添加背景颜色，便于查看位置 */
+    display: inline-block;
+    width: 680px;
+    height: 453.36px;
+    margin-right: 0px;
+    background-color: #f0f0f0;
     z-index: 5;
+    position: relative;
+    overflow: hidden;
+  /*border-radius: 10px;*/
 }
 
-.slider-item:last-child {
-    margin-right: 0; /* 最后一个图片项去除右侧外边距 */
+/*.slider-item:last-child {
+    margin-right: 0;
     z-index: 5;
-}
+}*/
+
   
   @font-face {
       font-family:'Univers LT Std-XBlackObl';
@@ -198,11 +222,11 @@
 }
 
   .intro{
-    font-family:'Helvetica-regular';
+    font-family: Helvetica, sans-serif;
     font-size: 16.5pt;
     width: 35%;
     position: absolute;
-    transform: translate(0,240px);
+    transform: translate(0,260px);
     color: #ffffff;
    /* text-shadow: 0.7px 0.7px 0.7px rgb(66, 66, 66), 0 0 1em rgb(66, 66, 66), 0 0 2em rgb(66, 66, 66);*/
     z-index: 4;
@@ -526,11 +550,12 @@
     width: 910px;
     height: 454px;
     background-color: rgb(0, 164, 255);
-    opacity: 0.5;
+    opacity: 0.8;
     position: relative;
-    top: 6px;
+    top: 22px;
     left: 610px;
-    z-index: 8;
+    z-index: 5;
+    transition: opacity 0.3s ease;
   }
   
   #square{
@@ -625,7 +650,7 @@
       height: 100px;
       position: absolute;
       transform: translate(-100px,797px);
-      background: rgb(255, 44, 150);
+      background: rgb(255, 224, 0);
       overflow: hidden;
       z-index: -1;
   }
@@ -635,7 +660,7 @@
       height: 100px;
       position: absolute;
       transform: translate(-100px,897px);
-      background: rgb(255, 224, 0);
+      background: rgb(255, 44, 150);
       overflow: hidden;
       z-index: -1;
   }
@@ -685,7 +710,7 @@
       height: 100px;
       position: absolute;
       transform: translate(-100px,1397px);
-      background: rgb(255, 224, 0);
+      background: rgb(0, 164, 255);
       overflow: hidden;
       z-index: -1;
   }

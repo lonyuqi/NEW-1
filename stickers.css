@@ -4,6 +4,47 @@
             box-sizing: border-box;
   }
   
+  .slider-container {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  
+  .slider-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  body{
+    width: 1630px;
+    height: 0px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  .slider-container {
+    width: 61%; /* 设置容器宽度 */
+    overflow-x: scroll;
+    white-space: nowrap; /* 禁止换行 */
+    position: relative; /* 设置容器为固定定位 */
+    top: 989px; /* 设置容器相对于页面顶部的距离 */
+    left: 600px; /* 设置容器相对于页面左侧的距离 */
+    /*border: 1px solid #ccc; /* 添加边框样式 */
+    padding: 10px; /* 添加内边距 */
+    z-index: 5;
+}
+
+.slider-item {
+    display: inline-block; /* 横向排列 */
+    width: 680px; /* 设置每个图片项的宽度 */
+    height: 453.36px; /* 设置每个图片项的高度 */
+    margin-right: 0px; /* 设置右侧外边距，调整图片之间的间距 */
+    background-color: #f0f0f0; /* 添加背景颜色，便于查看位置 */
+    z-index: 5;
+}
+
+.slider-item:last-child {
+    margin-right: 0; /* 最后一个图片项去除右侧外边距 */
+    z-index: 5;
+}
   
   @font-face {
       font-family:'Univers LT Std-XBlackObl';
@@ -32,7 +73,7 @@
       height: 0vh;
       overflow: hidden;
       white-space: nowrap;
-      z-index: 4;
+      z-index: 7;
       
   }
   section::before
@@ -54,7 +95,7 @@
       width:calc(100%+400px);
       left: 0px;
       display:flex;
-      z-index: 5;
+      z-index: 7;
       margin-top: -32px;
   }
   .scroll div{
@@ -67,7 +108,7 @@
       animation: animate 60s linear infinite ;
       
       font-weight: 600;
-      z-index: 4;
+      z-index: 7;
   }
   .scroll div :nth-child(2)
   {
@@ -95,7 +136,7 @@
       font-family:'Univers LT Std-XBlackObl';
       white-space: nowrap;
       position: absolute;
-      transform: translate(0,-69px);
+      transform: translate(0,-563px);
       font-size: 65pt;
       color: rgb(255, 255, 255);
       -webkit-text-stroke: 1px;
@@ -107,7 +148,7 @@
       font-family:'Univers LT Std-XBlackObl'; 
       font-size: 65pt;
       position: absolute;
-      transform: translate(0,17px);
+      transform: translate(0,-478px);
       color: rgb(255, 255, 255);
       -webkit-text-stroke: 1px;
       -webkit-text-stroke-color: black;
@@ -118,7 +159,7 @@
       font-family:'Univers LT Std-XBlackObl'; 
       font-size: 65pt;
       position: absolute;
-      transform: translate(0,88.5px);
+      transform: translate(0,-407px);
       color: rgb(255, 255, 255);
       -webkit-text-stroke: 1px;
       -webkit-text-stroke-color: black;
@@ -129,7 +170,7 @@
       font-family:'Univers LT Std-XBlackObl'; 
       font-size: 65pt;
       position: absolute;
-      transform: translate(0,157px);
+      transform: translate(0,-337px);
       color: rgb(255, 255, 255);
       -webkit-text-stroke: 1px;
       -webkit-text-stroke-color: black;
@@ -140,7 +181,7 @@
       font-family:'Univers LT Std-XBlackObl'; 
       font-size: 65pt;
       position: absolute;
-      transform: translate(0,202px);
+      transform: translate(0,-293px);
       color: rgb(255, 255, 255);
       -webkit-text-stroke: 1px;
       -webkit-text-stroke-color: black;
@@ -151,7 +192,7 @@
       font-family:'Univers LT Std-XBlackObl'; 
       font-size: 65pt;
       position: absolute;
-      transform: translate(0,1404px);
+      transform: translate(0,8px);
       color: rgb(255, 255, 255);
       -webkit-text-stroke: 1px;
       -webkit-text-stroke-color: black;
@@ -162,7 +203,7 @@
       font-family:'Univers LT Std-XBlackObl'; 
       font-size: 65pt;
       position: absolute;
-      transform: translate(0,517px);
+      transform: translate(0,22px);
       color: rgb(255, 255, 255);
       -webkit-text-stroke: 1px;
       -webkit-text-stroke-color: black;
@@ -173,7 +214,7 @@
       font-family:'Univers LT Std-XBlackObl'; 
       font-size: 65pt;
       position: absolute;
-      transform: translate(0,617px);
+      transform: translate(0,121px);
       color: rgb(255, 255, 255);
       -webkit-text-stroke: 1px;
       -webkit-text-stroke-color: black;
@@ -184,29 +225,64 @@
       font-family:'Univers LT Std-XBlackObl'; 
       font-size: 65pt;
       position: absolute;
-      transform: translate(0,717px);
+      transform: translate(0,222px);
       color: rgb(255, 255, 255);
       -webkit-text-stroke: 1px;
       -webkit-text-stroke-color: black;
       z-index: 2;
   }
-  
+
+  .name1{
+    font-family:'UniversLTStd-Obl';
+    font-size: 14pt;
+    position: absolute;
+    transform: translate(0,490px);
+    color: #ffffff;
+    z-index: 4;
+  }
+
+  .name2{
+    font-family:'UniversLTStd-Obl';
+    font-size: 14pt;
+    position: absolute;
+    transform: translate(0,510px);
+    color: #ffffff;
+    z-index: 4;
+  }
+
+  @font-face {
+    font-family:'Helvetica-regular';
+    src:url('font/Helvetica.ttf')
+}
+
+  .intro{
+    font-family: Helvetica, sans-serif;
+    font-size: 16.5pt;
+    width: 35%;
+    position: absolute;
+    transform: translate(0,710px);
+    color: #ffffff;
+   /* text-shadow: 0.7px 0.7px 0.7px rgb(66, 66, 66), 0 0 1em rgb(66, 66, 66), 0 0 2em rgb(66, 66, 66);*/
+    z-index: 4;
+  }
+
   .five{
       font-family:'Univers LT Std-XBlackObl'; 
       font-size: 65pt;
       position: absolute;
-      transform: translate(0,817px);
+      transform: translate(0,317px);
       color: rgb(255, 255, 255);
-      -webkit-text-stroke: 1px;
-      -webkit-text-stroke-color: black;
-      z-index: 2;
+      text-shadow: 0.7px 0.7px 0.7px rgb(255, 255, 255), 0 0 1em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
+      /*-webkit-text-stroke: 1px;
+      -webkit-text-stroke-color: black;*/
+      z-index: 4;
   }
   
   .six{
       font-family:'Univers LT Std-XBlackObl'; 
       font-size: 65pt;
       position: absolute;
-      transform: translate(0,917px);
+      transform: translate(0,922px);
       color: rgb(255, 255, 255);
       -webkit-text-stroke: 1px;
       -webkit-text-stroke-color: black;
@@ -217,7 +293,7 @@
       font-family:'Univers LT Std-XBlackObl'; 
       font-size: 65pt;
       position: absolute;
-      transform: translate(0,1017px);
+      transform: translate(0,1022px);
       color: rgb(255, 255, 255);
       -webkit-text-stroke: 1px;
       -webkit-text-stroke-color: black;
@@ -228,7 +304,7 @@
       font-family:'Univers LT Std-XBlackObl'; 
       font-size: 65pt;
       position: absolute;
-      transform: translate(0,1117px);
+      transform: translate(0,1122px);
       color: rgb(255, 255, 255);
       -webkit-text-stroke: 1px;
       -webkit-text-stroke-color: black;
@@ -239,7 +315,7 @@
       font-family:'Univers LT Std-XBlackObl'; 
       font-size: 65pt;
       position: absolute;
-      transform: translate(0,1217px);
+      transform: translate(0,1222px);
       color: rgb(255, 255, 255);
       -webkit-text-stroke: 1px;
       -webkit-text-stroke-color: black;
@@ -250,7 +326,7 @@
       font-family:'Univers LT Std-XBlackObl'; 
       font-size: 65pt;
       position: absolute;
-      transform: translate(0,417px);
+      transform: translate(0,1322px);
       color: rgb(255, 255, 255);
       -webkit-text-stroke: 1px;
       -webkit-text-stroke-color: black;
@@ -261,7 +337,7 @@
       font-family:'Univers LT Std-XBlackObl'; 
       font-size: 65pt;
       position: absolute;
-      transform: translate(0,1417px);
+      transform: translate(0,1422px);
       color: rgb(255, 255, 255);
       -webkit-text-stroke: 1px;
       -webkit-text-stroke-color: black;
@@ -272,7 +348,7 @@
       font-family:'Univers LT Std-XBlackObl'; 
       font-size: 65pt;
       position: absolute;
-      transform: translate(0,1517px);
+      transform: translate(0,1522px);
       color: rgb(255, 255, 255);
       -webkit-text-stroke: 1px;
       -webkit-text-stroke-color: black;
@@ -289,7 +365,7 @@
       font-style: oblique;
       font-size: 16.5pt;
       position: absolute;
-      transform: translate(1320px,47px);
+      transform: translate(1320px,-445px);
       color: rgb(255, 255, 255);
       text-shadow: 1px 1px 1px rgb(100, 100, 100), 0 0 0.7em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
       z-index: 2;
@@ -299,7 +375,7 @@
       font-family:'UniversLTStd-Obl';
       font-size: 16.5pt;
       position: absolute;
-      transform: translate(1347px,147px);
+      transform: translate(1347px,-345px);
       color: rgb(255, 255, 255);
       text-shadow: 1px 1px 1px rgb(100, 100, 100), 0 0 0.7em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
       z-index: 2;
@@ -309,7 +385,7 @@
       font-family:'UniversLTStd-Obl';
       font-size: 16.5pt;
       position: absolute;
-      transform: translate(1388px,247px);
+      transform: translate(1388px,-245px);
       color: rgb(255, 255, 255);
       text-shadow: 1px 1px 1px rgb(100, 100, 100), 0 0 0.7em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
       z-index: 2;
@@ -319,7 +395,7 @@
       font-family:'UniversLTStd-Obl';
       font-size: 16.5pt;
       position: absolute;
-      transform: translate(1378px,347px);
+      transform: translate(1378px,-145px);
       color: rgb(255, 255, 255);
       text-shadow: 1px 1px 1px rgb(100, 100, 100), 0 0 0.7em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
       z-index: 2;
@@ -329,7 +405,7 @@
       font-family:'UniversLTStd-Obl';
       font-size: 16.5pt;
       position: absolute;
-      transform: translate(1347px,447px);
+      transform: translate(1347px,-45px);
       color: rgb(255, 255, 255);
       text-shadow: 1px 1px 1px rgb(100, 100, 100), 0 0 0.7em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
       z-index: 2;
@@ -339,7 +415,7 @@
       font-family:'UniversLTStd-Obl';
       font-size: 16.5pt;
       position: absolute;
-      transform: translate(1382px,547px);
+      transform: translate(1382px,55px);
       color: rgb(255, 255, 255);
       text-shadow: 1px 1px 1px rgb(100, 100, 100), 0 0 0.7em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
       z-index: 2;
@@ -349,7 +425,7 @@
       font-family:'UniversLTStd-Obl';
       font-size: 16.5pt;
       position: absolute;
-      transform: translate(1347px,647px);
+      transform: translate(1347px,155px);
       color: rgb(255, 255, 255);
       text-shadow: 1px 1px 1px rgb(100, 100, 100), 0 0 0.7em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
       z-index: 2;
@@ -359,7 +435,7 @@
       font-family:'UniversLTStd-Obl';
       font-size: 16.5pt;
       position: absolute;
-      transform: translate(1388px,747px);
+      transform: translate(1388px,255px);
       color: rgb(255, 255, 255);
       text-shadow: 1px 1px 1px rgb(100, 100, 100), 0 0 0.7em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
       z-index: 2;
@@ -369,7 +445,7 @@
       font-family:'UniversLTStd-Obl';
       font-size: 16.5pt;
       position: absolute;
-      transform: translate(1388px,847px);
+      transform: translate(1388px,355px);
       color: rgb(255, 255, 255);
       text-shadow: 1px 1px 1px rgb(100, 100, 100), 0 0 0.7em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
       z-index:2;
@@ -389,7 +465,7 @@
       font-family:'UniversLTStd-Obl';
       font-size: 16.5pt;
       position: absolute;
-      transform: translate(1358px,1047px);
+      transform: translate(1358px,1054px);
       color: rgb(255, 255, 255);
       text-shadow: 1px 1px 1px rgb(100, 100, 100), 0 0 0.7em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
       z-index:2;
@@ -399,7 +475,7 @@
       font-family:'UniversLTStd-Obl';
       font-size: 16.5pt;
       position: absolute;
-      transform: translate(1347px,1147px);
+      transform: translate(1347px,1154px);
       color: rgb(255, 255, 255);
       text-shadow: 1px 1px 1px rgb(100, 100, 100), 0 0 0.7em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
       z-index:2;
@@ -409,7 +485,7 @@
       font-family:'UniversLTStd-Obl';
       font-size: 16.5pt;
       position: absolute;
-      transform: translate(1382px,1247px);
+      transform: translate(1382px,1254px);
       color: rgb(255, 255, 255);
       text-shadow: 1px 1px 1px rgb(100, 100, 100), 0 0 0.7em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
       z-index:2;
@@ -419,7 +495,7 @@
       font-family:'UniversLTStd-Obl';
       font-size: 16.5pt;
       position: absolute;
-      transform: translate(1388px,1347px);
+      transform: translate(1388px,1354px);
       color: rgb(255, 255, 255);
       text-shadow: 1px 1px 1px rgb(100, 100, 100), 0 0 0.7em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
       z-index:2;
@@ -430,7 +506,7 @@
       font-family:'UniversLTStd-Obl';
       font-size: 16.5pt;
       position: absolute;
-      transform: translate(1378px,1447px);
+      transform: translate(1378px,1454px);
       color: rgb(255, 255, 255);
       text-shadow: 1px 1px 1px rgb(100, 100, 100), 0 0 0.7em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
       z-index:2;
@@ -440,7 +516,7 @@
       font-family:'UniversLTStd-Obl';
       font-size: 16.5pt;
       position: absolute;
-      transform: translate(1382px,1547px);
+      transform: translate(1382px,1554px);
       color: rgb(255, 255, 255);
       text-shadow: 1px 1px 1px rgb(100, 100, 100), 0 0 0.7em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
       z-index:2;
@@ -450,7 +526,7 @@
       font-family:'UniversLTStd-Obl';
       font-size: 16.5pt;
       position: absolute;
-      transform: translate(1358px,1647px);
+      transform: translate(1358px,1654px);
       color: rgb(255, 255, 255);
       text-shadow: 1px 1px 1px rgb(100, 100, 100), 0 0 0.7em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
       z-index:2;
@@ -461,16 +537,26 @@
   
   
   
-  
+  #square17{
+    width: 910px;
+    height: 455px;
+    background-color: rgb(255, 44, 150);
+    opacity: 0.8;
+    position: relative;
+    top: 522px;
+    left: 610px;
+    z-index: 6;
+    transition: opacity 0.3s ease;
+  }
   
   #square{
       width: 1620px;
       height: 100px;
       position: absolute;
-      transform: translate(-100px,-8px);
+      transform: translate(-100px,-503px);
       background: rgb(198, 198, 198);
       overflow-x: hidden;
-      z-index: -1;
+      z-index: 1;
   
   }
   
@@ -478,10 +564,10 @@
       width: 1620px;
       height: 100px;
       position: absolute;
-      transform: translate(-100px,92px);
+      transform: translate(-100px,-403px);
       background: rgb(0, 164, 255);
       overflow: hidden;
-      z-index: -1;
+      z-index: 1;
   
   }
   
@@ -489,10 +575,10 @@
       width: 1620px;
       height: 100px;
       position: absolute;
-      transform: translate(-100px,192px);
+      transform: translate(-100px,-303px);
       background: rgb(255, 44, 150);
       overflow: hidden;
-      z-index: -1;
+      z-index: 1;
   
   }
   
@@ -500,10 +586,10 @@
       width: 1620px;
       height: 100px;
       position: absolute;
-      transform: translate(-100px,292px);
+      transform: translate(-100px,-203px);
       background: rgb(255, 224, 0);
       overflow: hidden;
-      z-index: -1;
+      z-index: 1;
   
   }
   
@@ -511,10 +597,10 @@
       width: 1620px;
       height: 100px;
       position: absolute;
-      transform: translate(-100px,392px);
+      transform: translate(-100px,-103px);
       background: rgb(0, 164, 255);
       overflow: hidden;
-      z-index: -1;
+      z-index: 1;
   
   }
   
@@ -522,10 +608,10 @@
       width: 1620px;
       height: 100px;
       position: absolute;
-      transform: translate(-100px,492px);
+      transform: translate(-100px,-3px);
       background: rgb(251, 0, 255);
       overflow: hidden;
-      z-index: -1;
+      z-index: 1;
   
   }
   
@@ -533,108 +619,108 @@
       width: 1620px;
       height: 100px;
       position: absolute;
-      transform: translate(-100px,592px);
+      transform: translate(-100px,97px);
       background: rgb(0, 164, 255);
       overflow: hidden;
-      z-index: -1;
+      z-index: 1;
   
   }
   
   #square7{
       width: 1620px;
-      height: 100px;
+      height: 101px;
       position: absolute;
-      transform: translate(-100px,692px);
+      transform: translate(-100px,197px);
       background: rgb(255, 44, 150);
       overflow: hidden;
-      z-index: -1;
+      z-index: 1;
   }
   
   #square8{
       width: 1620px;
       height: 100px;
       position: absolute;
-      transform: translate(-100px,792px);
-      background: rgb(255, 44, 150);
+      transform: translate(-100px,297px);
+      background: rgb(255, 224, 0);
       overflow: hidden;
-      z-index: -1;
+      z-index: 1;
   }
   
   #square9{
       width: 1620px;
-      height: 100px;
+      height: 600px;
       position: absolute;
-      transform: translate(-100px,892px);
-      background: rgb(255, 224, 0);
+      transform: translate(-100px,397px);
+      background: rgb(255, 44, 150);
       overflow: hidden;
-      z-index: -1;
+      z-index: 3;
   }
   
   #square10{
       width: 1620px;
       height: 100px;
       position: absolute;
-      transform: translate(-100px,992px);
+      transform: translate(-100px,997px);
       background: rgb(117, 243, 255);
       overflow: hidden;
-      z-index: -1;
+      z-index: 1;
   }
   
   #square11{
       width: 1620px;
       height: 100px;
       position: absolute;
-      transform: translate(-100px,1092px);
+      transform: translate(-100px,1097px);
       background: rgb(0, 164, 255);
       overflow: hidden;
-      z-index: -1;
+      z-index: 1;
   }
   
   #square12{
       width: 1620px;
       height: 100px;
       position: absolute;
-      transform: translate(-100px,1192px);
+      transform: translate(-100px,1197px);
       background: rgb(251, 0, 255);
       overflow: hidden;
-      z-index: -1;
+      z-index: 1;
   }
   
   #square13{
       width: 1620px;
       height: 100px;
       position: absolute;
-      transform: translate(-100px,1292px);
+      transform: translate(-100px,1297px);
       background: rgb(255, 44, 150);
       overflow: hidden;
-      z-index: -1;
+      z-index: 1;
   }
   
   #square14{
       width: 1620px;
       height: 100px;
       position: absolute;
-      transform: translate(-100px,1392px);
-      background: rgb(255, 224, 0);
+      transform: translate(-100px,1397px);
+      background: rgb(0, 164, 255);
       overflow: hidden;
-      z-index: -1;
+      z-index: 1;
   }
   
   #square15{
       width: 1620px;
       height: 100px;
       position: absolute;
-      transform: translate(-100px,1492px);
+      transform: translate(-100px,1497px);
       background: rgb(251, 0, 255);
       overflow: hidden;
-      z-index: -1;
+      z-index: 1;
   }
   
   #square16{
       width: 1620px;
       height: 100px;
       position: absolute;
-      transform: translate(-100px,1592px);
+      transform: translate(-100px,1597px);
       background: rgb(117, 243, 255);
-      z-index: -1;
+      z-index: 1;
   }

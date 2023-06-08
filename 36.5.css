@@ -4,6 +4,21 @@
        -moz-box-sizing: border-box;
             box-sizing: border-box;
   }
+  body{
+    width: 1630px;
+    height: 0px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  .slider-container {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  
+  .slider-container::-webkit-scrollbar {
+    display: none;
+  }
   
   .slider-container {
     width: 61%; /* 设置容器宽度 */
@@ -22,7 +37,7 @@
     width: 680px; /* 设置每个图片项的宽度 */
     height: 453.36px; /* 设置每个图片项的高度 */
     margin-right: 0px; /* 设置右侧外边距，调整图片之间的间距 */
-    background-color: #f0f0f0; /* 添加背景颜色，便于查看位置 */
+    background-color: #ffe000; /* 添加背景颜色，便于查看位置 */
     z-index: 5;
 }
 
@@ -30,6 +45,12 @@
     margin-right: 0; /* 最后一个图片项去除右侧外边距 */
     z-index: 5;
 }
+
+.custom-video {
+    width: 100%; /* 设置视频宽度为容器宽度的百分比 */
+    height: 453.36px; /* 设置视频高度为容器高度的百分比 */
+    object-fit: contain; /* 控制视频的尺寸以保持原始长宽比 */
+  }
 
   @font-face {
       font-family:'Univers LT Std-XBlackObl';
@@ -188,11 +209,11 @@
 }
 
   .intro{
-    font-family:'Helvetica-regular';
+    font-family: Helvetica, sans-serif;
     font-size: 16.5pt;
     width: 35%;
     position: absolute;
-    transform: translate(0,70px);
+    transform: translate(0,115px);
     color: #ffffff;
    /* text-shadow: 0.7px 0.7px 0.7px rgb(66, 66, 66), 0 0 1em rgb(66, 66, 66), 0 0 2em rgb(66, 66, 66);*/
     z-index: 4;
@@ -525,13 +546,14 @@
   
   #square17{
     width: 910px;
-    height: 453.36px;
+    height: 460.36px;
     background-color: rgb(255, 224, 0);
-    opacity: 0.5;
+    opacity: 0.8;
     position: relative;
-    top: -94px;
+    top: -84px;
     left: 610px;
-    z-index: 8;
+    z-index: 5;
+    transition: opacity 0.3s ease;
   }
   
   #square{
@@ -626,7 +648,7 @@
       height: 100px;
       position: absolute;
       transform: translate(-100px,797px);
-      background: rgb(255, 44, 150);
+      background: rgb(255, 224, 0);
       overflow: hidden;
       z-index: -1;
   }
@@ -636,7 +658,7 @@
       height: 100px;
       position: absolute;
       transform: translate(-100px,897px);
-      background: rgb(255, 224, 0);
+      background: rgb(255, 44, 150);
       overflow: hidden;
       z-index: -1;
   }
@@ -686,7 +708,7 @@
       height: 100px;
       position: absolute;
       transform: translate(-100px,1397px);
-      background: rgb(255, 224, 0);
+      background: rgb(0, 164, 255);
       overflow: hidden;
       z-index: -1;
   }

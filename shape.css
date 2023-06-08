@@ -1,0 +1,725 @@
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+
+  .slider-container {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  
+  .slider-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  body{
+    width: 1630px;
+    height: 0px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .slider-container {
+    width: 61%; /* 设置容器宽度 */
+    overflow-x: scroll;
+    white-space: nowrap; /* 禁止换行 */
+    position: relative; /* 设置容器为固定定位 */
+    top: 1391px; /* 设置容器相对于页面顶部的距离 */
+    left: 600px; /* 设置容器相对于页面左侧的距离 */
+    /*border: 1px solid #ccc; /* 添加边框样式 */
+    padding: 10px; /* 添加内边距 */
+    z-index: 5;
+}
+
+.slider-item {
+    display: inline-block; /* 横向排列 */
+    width: 680px; /* 设置每个图片项的宽度 */
+    height: 453.36px; /* 设置每个图片项的高度 */
+    margin-right: 0px; /* 设置右侧外边距，调整图片之间的间距 */
+    background-color: #f0f0f0; /* 添加背景颜色，便于查看位置 */
+    z-index: 5;
+}
+
+.slider-item:last-child {
+    margin-right: 0; /* 最后一个图片项去除右侧外边距 */
+    z-index: 5;
+}
+  
+  @font-face {
+      font-family:'Univers LT Std-XBlackObl';
+      src:url('font/UniversLTStd-XBlackObl.otf')
+  }
+  
+  /*
+  .h1{
+      font-size: 65pt; 
+      color: rgb(255, 255, 255);
+      text-shadow: 0.7px 0.7px 0.7px rgb(255, 255, 255), 0 0 0.5em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
+      position: absolute;
+      transform: translate(0,-102px);
+      z-index: 3;
+  }
+  */
+  
+  
+  .section{
+      /*font-family:Univers LT Std-XBlackOb;*/
+      color: #ffffff;
+      /*text-shadow: 0.7px 0.7px 0.7px rgb(255, 255, 255), 0 0 0.5em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);*/
+      position: absolute;
+      transform: translate(0,-102px);
+      width:100%;
+      height: 0vh;
+      overflow: hidden;
+      white-space: nowrap;
+      z-index: 4;
+      
+  }
+  section::before
+  {
+      content:"";
+      position:absolute;
+      top:0;
+      left :100px;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+  }
+  
+  .scroll{
+      position: fixed;
+      font-family:'Univers LT Std-XBlackObl';
+      text-shadow: 0.7px 0.7px 0.7px rgb(255, 255, 255), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
+      
+      width:calc(100%+400px);
+      left: 0px;
+      display:flex;
+      z-index: 5;
+      margin-top: -32px;
+  }
+  .scroll div{
+      position:absolute;
+      color:rgb(255, 255, 255);
+      font-size: 65pt;
+      
+      letter-spacing:0em;
+      white-space:nowrap;
+      animation: animate 60s linear infinite ;
+      
+      font-weight: 600;
+      z-index: 4;
+  }
+  .scroll div :nth-child(2)
+  {
+      animation: animate-two 30s linear infinite ;
+      animation-delay: 0s;
+  }
+  @keyframes animate
+  {
+      0%
+      {
+          transform: translateX(100%);
+      }
+      100%{
+          transform: translateX(-100%);
+      }
+  }
+  
+  
+  .scroll-wrap {
+      overflow: hidden;
+      white-space: nowrap;
+  }
+  
+  h2{
+      font-family:'Univers LT Std-XBlackObl';
+      white-space: nowrap;
+      position: absolute;
+      transform: translate(0,-563px);
+      font-size: 65pt;
+      color: rgb(255, 255, 255);
+      -webkit-text-stroke: 1px;
+      -webkit-text-stroke-color: black;
+      z-index: 2;
+  }
+  
+  h3{
+      font-family:'Univers LT Std-XBlackObl'; 
+      font-size: 65pt;
+      position: absolute;
+      transform: translate(0,-478px);
+      color: rgb(255, 255, 255);
+      -webkit-text-stroke: 1px;
+      -webkit-text-stroke-color: black;
+      z-index: 2;
+  }
+  
+  h4{
+      font-family:'Univers LT Std-XBlackObl'; 
+      font-size: 65pt;
+      position: absolute;
+      transform: translate(0,-407px);
+      color: rgb(255, 255, 255);
+      -webkit-text-stroke: 1px;
+      -webkit-text-stroke-color: black;
+      z-index: 2;
+  }
+  
+  h5{
+      font-family:'Univers LT Std-XBlackObl'; 
+      font-size: 65pt;
+      position: absolute;
+      transform: translate(0,-337px);
+      color: rgb(255, 255, 255);
+      -webkit-text-stroke: 1px;
+      -webkit-text-stroke-color: black;
+      z-index: 2;
+  }
+  
+  h6{
+      font-family:'Univers LT Std-XBlackObl'; 
+      font-size: 65pt;
+      position: absolute;
+      transform: translate(0,-293px);
+      color: rgb(255, 255, 255);
+      -webkit-text-stroke: 1px;
+      -webkit-text-stroke-color: black;
+      z-index: 2;
+  }
+  
+  .one{
+      font-family:'Univers LT Std-XBlackObl'; 
+      font-size: 65pt;
+      position: absolute;
+      transform: translate(0,8px);
+      color: rgb(255, 255, 255);
+      -webkit-text-stroke: 1px;
+      -webkit-text-stroke-color: black;
+      z-index: 2;
+  }
+  
+  .two{
+      font-family:'Univers LT Std-XBlackObl'; 
+      font-size: 65pt;
+      position: absolute;
+      transform: translate(0,22px);
+      color: rgb(255, 255, 255);
+      -webkit-text-stroke: 1px;
+      -webkit-text-stroke-color: black;
+      z-index: 2;
+  }
+  
+  .three{
+      font-family:'Univers LT Std-XBlackObl'; 
+      font-size: 65pt;
+      position: absolute;
+      transform: translate(0,121px);
+      color: rgb(255, 255, 255);
+      -webkit-text-stroke: 1px;
+      -webkit-text-stroke-color: black;
+      z-index: 2;
+  }
+  
+  .four{
+      font-family:'Univers LT Std-XBlackObl'; 
+      font-size: 65pt;
+      position: absolute;
+      transform: translate(0,222px);
+      color: rgb(255, 255, 255);
+      -webkit-text-stroke: 1px;
+      -webkit-text-stroke-color: black;
+      z-index: 4;
+  }
+
+  .name1{
+    font-family:'UniversLTStd-Obl';
+    font-size: 14pt;
+    position: absolute;
+    transform: translate(0,890px);
+    color: #ffffff;
+    z-index: 4;
+  }
+
+  .name2{
+    font-family:'UniversLTStd-Obl';
+    font-size: 14pt;
+    position: absolute;
+    transform: translate(0,910px);
+    color: #ffffff;
+    z-index: 4;
+  }
+
+  @font-face {
+    font-family:'Helvetica-regular';
+    src:url('font/Helvetica.ttf')
+}
+
+  .intro{
+    font-family: Helvetica, sans-serif;
+    font-size: 16.5pt;
+    width: 35%;
+    position: absolute;
+    transform: translate(0,1124px);
+    color: #ffffff;
+   /* text-shadow: 0.7px 0.7px 0.7px rgb(66, 66, 66), 0 0 1em rgb(66, 66, 66), 0 0 2em rgb(66, 66, 66);*/
+    z-index: 4;
+  }
+
+  .five{
+      font-family:'Univers LT Std-XBlackObl'; 
+      font-size: 65pt;
+      position: absolute;
+      transform: translate(0,322px);
+      color: rgb(255, 255, 255);
+      -webkit-text-stroke: 1px;
+      -webkit-text-stroke-color: black;
+      z-index: 4;
+  }
+  
+  .six{
+      font-family:'Univers LT Std-XBlackObl'; 
+      font-size: 65pt;
+      position: absolute;
+      transform: translate(0,422px);
+      color: rgb(255, 255, 255);
+      -webkit-text-stroke: 1px;
+      -webkit-text-stroke-color: black;
+      z-index: 4;
+  }
+  
+  .seven{
+      font-family:'Univers LT Std-XBlackObl'; 
+      font-size: 65pt;
+      position: absolute;
+      transform: translate(0,522px);
+      color: rgb(255, 255, 255);
+      -webkit-text-stroke: 1px;
+      -webkit-text-stroke-color: black;
+      z-index: 2;
+  }
+  
+  .eight{
+      font-family:'Univers LT Std-XBlackObl'; 
+      font-size: 65pt;
+      position: absolute;
+      transform: translate(0,622px);
+      color: rgb(255, 255, 255);
+      -webkit-text-stroke: 1px;
+      -webkit-text-stroke-color: black;
+      z-index: 2;
+  }
+  
+  .nine{
+      font-family:'Univers LT Std-XBlackObl'; 
+      font-size: 65pt;
+      position: absolute;
+      transform: translate(0,722px);
+      color: rgb(255, 255, 255);
+      text-shadow: 0.7px 0.7px 0.7px rgb(255, 255, 255), 0 0 1em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
+      /*-webkit-text-stroke: 1px;
+      -webkit-text-stroke-color: black;*/
+      z-index: 2;
+  }
+  
+  .ten{
+      font-family:'Univers LT Std-XBlackObl'; 
+      font-size: 65pt;
+      position: absolute;
+      transform: translate(0,1322px);
+      color: rgb(255, 255, 255);
+      -webkit-text-stroke: 1px;
+      -webkit-text-stroke-color: black;
+      z-index: 2;
+  }
+  
+  .eleven{
+      font-family:'Univers LT Std-XBlackObl'; 
+      font-size: 65pt;
+      position: absolute;
+      transform: translate(0,1422px);
+      color: rgb(255, 255, 255);
+      -webkit-text-stroke: 1px;
+      -webkit-text-stroke-color: black;
+      z-index: 2;
+  }
+  
+  .twelve{
+      font-family:'Univers LT Std-XBlackObl'; 
+      font-size: 65pt;
+      position: absolute;
+      transform: translate(0,1522px);
+      color: rgb(255, 255, 255);
+      -webkit-text-stroke: 1px;
+      -webkit-text-stroke-color: black;
+      z-index: 2;  
+  }
+  
+  @font-face {
+      font-family:'UniversLTStd-Obl';
+      src:url('font/UniversLTStd-Obl.otf');
+  }
+  
+  .sen1{
+      font-family:'UniversLTStd-Obl';
+      font-style: oblique;
+      font-size: 16.5pt;
+      position: absolute;
+      transform: translate(1320px,-445px);
+      color: rgb(255, 255, 255);
+      text-shadow: 1px 1px 1px rgb(100, 100, 100), 0 0 0.7em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
+      z-index: 2;
+  }
+  
+  .sen2{
+      font-family:'UniversLTStd-Obl';
+      font-size: 16.5pt;
+      position: absolute;
+      transform: translate(1347px,-345px);
+      color: rgb(255, 255, 255);
+      text-shadow: 1px 1px 1px rgb(100, 100, 100), 0 0 0.7em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
+      z-index: 2;
+  }
+  
+  .sen3{
+      font-family:'UniversLTStd-Obl';
+      font-size: 16.5pt;
+      position: absolute;
+      transform: translate(1388px,-245px);
+      color: rgb(255, 255, 255);
+      text-shadow: 1px 1px 1px rgb(100, 100, 100), 0 0 0.7em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
+      z-index: 2;
+  }
+  
+  .sen4{
+      font-family:'UniversLTStd-Obl';
+      font-size: 16.5pt;
+      position: absolute;
+      transform: translate(1378px,-145px);
+      color: rgb(255, 255, 255);
+      text-shadow: 1px 1px 1px rgb(100, 100, 100), 0 0 0.7em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
+      z-index: 2;
+  }
+  
+  .sen5{
+      font-family:'UniversLTStd-Obl';
+      font-size: 16.5pt;
+      position: absolute;
+      transform: translate(1347px,-45px);
+      color: rgb(255, 255, 255);
+      text-shadow: 1px 1px 1px rgb(100, 100, 100), 0 0 0.7em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
+      z-index: 2;
+  }
+  
+  .sen6{
+      font-family:'UniversLTStd-Obl';
+      font-size: 16.5pt;
+      position: absolute;
+      transform: translate(1382px,55px);
+      color: rgb(255, 255, 255);
+      text-shadow: 1px 1px 1px rgb(100, 100, 100), 0 0 0.7em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
+      z-index: 2;
+  }
+  
+  .sen7{
+      font-family:'UniversLTStd-Obl';
+      font-size: 16.5pt;
+      position: absolute;
+      transform: translate(1347px,155px);
+      color: rgb(255, 255, 255);
+      text-shadow: 1px 1px 1px rgb(100, 100, 100), 0 0 0.7em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
+      z-index: 2;
+  }
+  
+  .sen8{
+      font-family:'UniversLTStd-Obl';
+      font-size: 16.5pt;
+      position: absolute;
+      transform: translate(1388px,255px);
+      color: rgb(255, 255, 255);
+      text-shadow: 1px 1px 1px rgb(100, 100, 100), 0 0 0.7em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
+      z-index: 2;
+  }
+  
+  .sen9{
+      font-family:'UniversLTStd-Obl';
+      font-size: 16.5pt;
+      position: absolute;
+      transform: translate(1388px,355px);
+      color: rgb(255, 255, 255);
+      text-shadow: 1px 1px 1px rgb(100, 100, 100), 0 0 0.7em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
+      z-index:2;
+  }
+  
+  .sen10{
+      font-family:'UniversLTStd-Obl';
+      font-size: 16.5pt;
+      position: absolute;
+      transform: translate(1378px,455px);
+      color: rgb(255, 255, 255);
+      text-shadow: 1px 1px 1px rgb(100, 100, 100), 0 0 0.7em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
+      z-index:2;
+  }
+  
+  .sen11{
+      font-family:'UniversLTStd-Obl';
+      font-size: 16.5pt;
+      position: absolute;
+      transform: translate(1358px,555px);
+      color: rgb(255, 255, 255);
+      text-shadow: 1px 1px 1px rgb(100, 100, 100), 0 0 0.7em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
+      z-index:2;
+  }
+  
+  .sen12{
+      font-family:'UniversLTStd-Obl';
+      font-size: 16.5pt;
+      position: absolute;
+      transform: translate(1347px,655px);
+      color: rgb(255, 255, 255);
+      text-shadow: 1px 1px 1px rgb(100, 100, 100), 0 0 0.7em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
+      z-index:2;
+  }
+  
+  .sen13{
+      font-family:'UniversLTStd-Obl';
+      font-size: 16.5pt;
+      position: absolute;
+      transform: translate(1382px,755px);
+      color: rgb(255, 255, 255);
+      text-shadow: 1px 1px 1px rgb(100, 100, 100), 0 0 0.7em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
+      z-index:2;
+  }
+  
+  .sen14{
+      font-family:'UniversLTStd-Obl';
+      font-size: 16.5pt;
+      position: absolute;
+      transform: translate(1388px,1354px);
+      color: rgb(255, 255, 255);
+      text-shadow: 1px 1px 1px rgb(100, 100, 100), 0 0 0.7em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
+      z-index:2;
+  }
+  
+  
+  .sen15{
+      font-family:'UniversLTStd-Obl';
+      font-size: 16.5pt;
+      position: absolute;
+      transform: translate(1378px,1454px);
+      color: rgb(255, 255, 255);
+      text-shadow: 1px 1px 1px rgb(100, 100, 100), 0 0 0.7em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
+      z-index:2;
+  }
+  
+  .sen16{
+      font-family:'UniversLTStd-Obl';
+      font-size: 16.5pt;
+      position: absolute;
+      transform: translate(1382px,1554px);
+      color: rgb(255, 255, 255);
+      text-shadow: 1px 1px 1px rgb(100, 100, 100), 0 0 0.7em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
+      z-index:2;
+  }
+  
+  .sen17{
+      font-family:'UniversLTStd-Obl';
+      font-size: 16.5pt;
+      position: absolute;
+      transform: translate(1358px,1654px);
+      color: rgb(255, 255, 255);
+      text-shadow: 1px 1px 1px rgb(100, 100, 100), 0 0 0.7em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
+      z-index:2;
+  }
+  
+  
+  
+  
+  
+  
+  #square17{
+    width: 910px;
+    height: 455px;
+    background-color: rgb(255, 44, 150);
+    opacity: 0.8;
+    position: relative;
+    top: 922px;
+    left: 610px;
+    z-index: 5;
+    transition: opacity 0.3s ease;
+  }
+  
+  #square{
+      width: 1620px;
+      height: 100px;
+      position: absolute;
+      transform: translate(-100px,-503px);
+      background: rgb(198, 198, 198);
+      overflow-x: hidden;
+      z-index: -1;
+  
+  }
+  
+  #square1{
+      width: 1620px;
+      height: 100px;
+      position: absolute;
+      transform: translate(-100px,-403px);
+      background: rgb(0, 164, 255);
+      overflow: hidden;
+      z-index: -1;
+  
+  }
+  
+  #square2{
+      width: 1620px;
+      height: 100px;
+      position: absolute;
+      transform: translate(-100px,-303px);
+      background: rgb(255, 44, 150);
+      overflow: hidden;
+      z-index: -1;
+  
+  }
+  
+  #square3{
+      width: 1620px;
+      height: 100px;
+      position: absolute;
+      transform: translate(-100px,-203px);
+      background: rgb(255, 224, 0);
+      overflow: hidden;
+      z-index: -1;
+  
+  }
+  
+  #square4{
+      width: 1620px;
+      height: 100px;
+      position: absolute;
+      transform: translate(-100px,-103px);
+      background: rgb(0, 164, 255);
+      overflow: hidden;
+      z-index: -1;
+  
+  }
+  
+  #square5{
+      width: 1620px;
+      height: 100px;
+      position: absolute;
+      transform: translate(-100px,-3px);
+      background: rgb(251, 0, 255);
+      overflow: hidden;
+      z-index: -1;
+  
+  }
+  
+  #square6{
+      width: 1620px;
+      height: 100px;
+      position: absolute;
+      transform: translate(-100px,97px);
+      background: rgb(0, 164, 255);
+      overflow: hidden;
+      z-index: -1;
+  
+  }
+  
+  #square7{
+      width: 1620px;
+      height: 101px;
+      position: absolute;
+      transform: translate(-100px,197px);
+      background: rgb(255, 44, 150);
+      overflow: hidden;
+      z-index: -1;
+  }
+  
+  #square8{
+      width: 1620px;
+      height: 100px;
+      position: absolute;
+      transform: translate(-100px,297px);
+      background: rgb(255, 224, 0);
+      overflow: hidden;
+      z-index: -1;
+  }
+  
+  #square9{
+      width: 1620px;
+      height: 100px;
+      position: absolute;
+      transform: translate(-100px,397px);
+      background: rgb(255, 44, 150);
+      overflow: hidden;
+      z-index: -1;
+  }
+  
+  #square10{
+      width: 1620px;
+      height: 100px;
+      position: absolute;
+      transform: translate(-100px,497px);
+      background: rgb(117, 243, 255);
+      overflow: hidden;
+      z-index: -1;
+  }
+  
+  #square11{
+      width: 1620px;
+      height: 100px;
+      position: absolute;
+      transform: translate(-100px,597px);
+      background: rgb(0, 164, 255);
+      overflow: hidden;
+      z-index: -1;
+  }
+  
+  #square12{
+      width: 1620px;
+      height: 100px;
+      position: absolute;
+      transform: translate(-100px,697px);
+      background: rgb(251, 0, 255);
+      overflow: hidden;
+      z-index: -1;
+  }
+  
+  #square13{
+      width: 1620px;
+      height: 600px;
+      position: absolute;
+      transform: translate(-100px,797px);
+      background: rgb(255, 44, 150);
+      overflow: hidden;
+      z-index: -1;
+  }
+  
+  #square14{
+      width: 1620px;
+      height: 100px;
+      position: absolute;
+      transform: translate(-100px,1397px);
+      background: rgb(0, 164, 255);
+      overflow: hidden;
+      z-index: -1;
+  }
+  
+  #square15{
+      width: 1620px;
+      height: 100px;
+      position: absolute;
+      transform: translate(-100px,1497px);
+      background: rgb(251, 0, 255);
+      overflow: hidden;
+      z-index: -1;
+  }
+  
+  #square16{
+      width: 1620px;
+      height: 100px;
+      position: absolute;
+      transform: translate(-100px,1597px);
+      background: rgb(117, 243, 255);
+      z-index: -1;
+  }

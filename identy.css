@@ -4,14 +4,29 @@
        -moz-box-sizing: border-box;
             box-sizing: border-box;
   }
+
+  .slider-container {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
   
+  .slider-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  body{
+    width: 1630px;
+    height: 0px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
   
   .slider-container {
     width: 61%; /* 设置容器宽度 */
     overflow-x: scroll;
     white-space: nowrap; /* 禁止换行 */
     position: relative; /* 设置容器为固定定位 */
-    top: 200px; /* 设置容器相对于页面顶部的距离 */
+    top: 190px; /* 设置容器相对于页面顶部的距离 */
     left: 600px; /* 设置容器相对于页面左侧的距离 */
     /*border: 1px solid #ccc; /* 添加边框样式 */
     padding: 10px; /* 添加内边距 */
@@ -146,7 +161,7 @@
     font-family:'UniversLTStd-Obl';
     font-size: 14pt;
     position: absolute;
-    transform: translate(0,-90px);
+    transform: translate(0,-309px);
     color: #ffffff;
     z-index: 4;
   }
@@ -155,7 +170,7 @@
     font-family:'UniversLTStd-Obl';
     font-size: 14pt;
     position: absolute;
-    transform: translate(0,-110px);
+    transform: translate(0,-289px);
     color: #ffffff;
     z-index: 4;
   }
@@ -166,11 +181,11 @@
 }
 
   .intro{
-    font-family:'Helvetica-regular';
+    font-family: Helvetica, sans-serif;
     font-size: 16.5pt;
-    width: 40%;
+    width: 35%;
     position: absolute;
-    transform: translate(0,-80px);
+    transform: translate(0,-20px);
     color: #ffffff;
    /* text-shadow: 0.7px 0.7px 0.7px rgb(66, 66, 66), 0 0 1em rgb(66, 66, 66), 0 0 2em rgb(66, 66, 66);*/
     z-index: 4;
@@ -351,7 +366,7 @@
       font-style: oblique;
       font-size: 16.5pt;
       position: absolute;
-      transform: translate(1320px,-455px);
+      transform: translate(1320px,-445px);
       color: rgb(255, 255, 255);
       text-shadow: 1px 1px 1px rgb(100, 100, 100), 0 0 0.7em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
       z-index: 2;
@@ -527,11 +542,12 @@
     width: 910px;
     height: 453.36px;
     background-color: rgb(0, 164, 255);
-    opacity: 0.5;
+    opacity: 0.8;
     position: relative;
-    top: -284px;
+    top: -277px;
     left: 610px;
-    z-index: 8;
+    transition: opacity 0.3s ease;
+    z-index: 5;
   }
   
   #square{
@@ -626,7 +642,7 @@
       height: 100px;
       position: absolute;
       transform: translate(-100px,797px);
-      background: rgb(255, 44, 150);
+      background: rgb(255, 224, 0);
       overflow: hidden;
       z-index: -1;
   }
@@ -636,7 +652,7 @@
       height: 100px;
       position: absolute;
       transform: translate(-100px,897px);
-      background: rgb(255, 224, 0);
+      background: rgb(255, 44, 150);
       overflow: hidden;
       z-index: -1;
   }
@@ -686,7 +702,7 @@
       height: 100px;
       position: absolute;
       transform: translate(-100px,1397px);
-      background: rgb(255, 224, 0);
+      background: rgb(0, 164, 255);
       overflow: hidden;
       z-index: -1;
   }

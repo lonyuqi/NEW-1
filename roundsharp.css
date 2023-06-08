@@ -4,7 +4,29 @@
        -moz-box-sizing: border-box;
             box-sizing: border-box;
   }
+
+  body{
+    width: 1630px;
+    height: 0px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
   
+  .slider-container {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  
+  .slider-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 1630px;
+  }
+
   .slider-container {
     width: 61%; /* 设置容器宽度 */
     overflow-x: scroll;
@@ -23,6 +45,7 @@
     height: 453.36px; /* 设置每个图片项的高度 */
     margin-right: 0px; /* 设置右侧外边距，调整图片之间的间距 */
     background-color: #f0f0f0; /* 添加背景颜色，便于查看位置 */
+    background-image: radial-gradient(ellipse at center, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.5));
     z-index: 5;
 }
 
@@ -58,7 +81,7 @@
       height: 0vh;
       overflow: hidden;
       white-space: nowrap;
-      z-index: 4;
+      z-index: 7;
       
   }
   section::before
@@ -80,7 +103,7 @@
       width:calc(100%+400px);
       left: 0px;
       display:flex;
-      z-index: 5;
+      z-index: 7;
       margin-top: -32px;
   }
   .scroll div{
@@ -93,7 +116,7 @@
       animation: animate 60s linear infinite ;
       
       font-weight: 600;
-      z-index: 4;
+      z-index: 7;
   }
   .scroll div :nth-child(2)
   {
@@ -155,11 +178,11 @@
 }
 
   .intro{
-    font-family:'Helvetica-regular';
+    font-family: Helvetica, sans-serif;
     font-size: 16.5pt;
     width: 35%;
     position: absolute;
-    transform: translate(0,-240px);
+    transform: translate(0,-180px);
     color: #ffffff;
    /* text-shadow: 0.7px 0.7px 0.7px rgb(66, 66, 66), 0 0 1em rgb(66, 66, 66), 0 0 2em rgb(66, 66, 66);*/
     z-index: 2;
@@ -533,14 +556,16 @@
   
   #square17{
     width: 910px;
-    height: 453.36px;
+    height: 470.36px;
     background-color: rgb(198, 198, 198);
-    opacity: 0.5;
+    opacity: 0.8;
     position: relative;
     top: -394px;
     left: 610px;
-    z-index: 8;
+    z-index: 6;
+    transition: opacity 0.3s ease;
   }
+
   
   
   
@@ -636,7 +661,7 @@
       height: 100px;
       position: absolute;
       transform: translate(-100px,797px);
-      background: rgb(255, 44, 150);
+      background: rgb(255, 224, 0);
       overflow: hidden;
       z-index: -1;
   }
@@ -646,7 +671,7 @@
       height: 100px;
       position: absolute;
       transform: translate(-100px,897px);
-      background: rgb(255, 224, 0);
+      background: rgb(255, 44, 150);
       overflow: hidden;
       z-index: -1;
   }
@@ -696,7 +721,7 @@
       height: 100px;
       position: absolute;
       transform: translate(-100px,1397px);
-      background: rgb(255, 224, 0);
+      background: rgb(0, 164, 255);
       overflow: hidden;
       z-index: -1;
   }
