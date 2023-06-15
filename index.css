@@ -13,8 +13,13 @@ body {
   }
 
 @font-face {
-    font-family:'Univers LT Std-XBlackObl';
-    src:url('font/UniversLTStd-XBlackObl.otf')
+    font-family:'JosefinSans';
+    src:url('font/JosefinSans-VariableFont_wght.ttf')
+}
+
+@font-face {
+    font-family:'Josefinslab';
+    src:url('font/JosefinSlab-VariableFont_wght.ttf')
 }
 
 /*
@@ -55,19 +60,19 @@ section::before
 
 .scroll{
     position: fixed;
-    font-family:'Univers LT Std-XBlackObl';
-    text-shadow: 0.7px 0.7px 0.7px rgb(255, 255, 255), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
+    font-family:'Josefinslab';
+    text-shadow: 0.7px 0.7px 0.7px rgb(255, 255, 255), 0 0 1em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
     
     width:calc(100%+400px);
     left: 0px;
     display:flex;
     z-index: 5;
-    margin-top: -32px;
+    margin-top: -9px;
 }
 .scroll div{
     position:absolute;
     color:rgb(255, 255, 255);
-    font-size: 65pt;
+    font-size: 90pt;
     
     letter-spacing:0em;
     white-space:nowrap;
@@ -99,334 +104,316 @@ section::before
 }
 
 h2{
-    font-family:'Univers LT Std-XBlackObl';
+    font-family:'JosefinSans';
     white-space: nowrap;
     position: absolute;
-    transform: translate(0,-69px);
+    transform: translate(0,-45px);
     font-size: 65pt;
     color: rgb(255, 255, 255);
-    -webkit-text-stroke: 1px;
-    -webkit-text-stroke-color: black;
+    font-weight: bold;
     z-index: 2;
 }
 
 h3{
-    font-family:'Univers LT Std-XBlackObl'; 
+    font-family:'JosefinSans'; 
     font-size: 65pt;
     position: absolute;
-    transform: translate(0,17px);
+    transform: translate(0,41px);
     color: rgb(255, 255, 255);
-    -webkit-text-stroke: 1px;
-    -webkit-text-stroke-color: black;
+    font-weight: bold;
     z-index: 2;
 }
 
 h4{
-    font-family:'Univers LT Std-XBlackObl'; 
+    font-family:'JosefinSans'; 
     font-size: 65pt;
     position: absolute;
-    transform: translate(0,88.5px);
+    transform: translate(0,112.5px);
     color: rgb(255, 255, 255);
-    -webkit-text-stroke: 1px;
-    -webkit-text-stroke-color: black;
+    font-weight: bold;
     z-index: 2;
 }
 
 h5{
-    font-family:'Univers LT Std-XBlackObl'; 
+    font-family:'JosefinSans'; 
     font-size: 65pt;
     position: absolute;
-    transform: translate(0,157px);
+    transform: translate(0,182px);
     color: rgb(255, 255, 255);
-    -webkit-text-stroke: 1px;
-    -webkit-text-stroke-color: black;
+    font-weight: bold;
     z-index: 2;
 }
 
 h6{
-    font-family:'Univers LT Std-XBlackObl'; 
+    font-family:'JosefinSans'; 
     font-size: 65pt;
     position: absolute;
-    transform: translate(0,202px);
+    transform: translate(0,226px);
     color: rgb(255, 255, 255);
-    -webkit-text-stroke: 1px;
-    -webkit-text-stroke-color: black;
+    font-weight: bold;
     z-index: 2;
 }
 
 .one{
-    font-family:'Univers LT Std-XBlackObl'; 
+    font-family:'JosefinSans'; 
     font-size: 65pt;
     position: absolute;
-    transform: translate(0,1404px);
+    transform: translate(0,1427px);
     color: rgb(255, 255, 255);
-    -webkit-text-stroke: 1px;
-    -webkit-text-stroke-color: black;
+    font-weight: bold;
     z-index: 2;
 }
 
 .two{
-    font-family:'Univers LT Std-XBlackObl'; 
+    font-family:'JosefinSans'; 
     font-size: 65pt;
     position: absolute;
-    transform: translate(0,517px);
+    transform: translate(0,541px);
     color: rgb(255, 255, 255);
-    -webkit-text-stroke: 1px;
-    -webkit-text-stroke-color: black;
+    font-weight: bold;
     z-index: 2;
 }
 
 .three{
-    font-family:'Univers LT Std-XBlackObl'; 
+    font-family:'JosefinSans'; 
     font-size: 65pt;
     position: absolute;
-    transform: translate(0,617px);
+    transform: translate(0,641px);
     color: rgb(255, 255, 255);
-    -webkit-text-stroke: 1px;
-    -webkit-text-stroke-color: black;
+    font-weight: bold;
     z-index: 2;
 }
 
 .four{
-    font-family:'Univers LT Std-XBlackObl'; 
+    font-family:'JosefinSans'; 
     font-size: 65pt;
     position: absolute;
-    transform: translate(0,717px);
+    transform: translate(0,741px);
     color: rgb(255, 255, 255);
-    -webkit-text-stroke: 1px;
-    -webkit-text-stroke-color: black;
+    font-weight: bold;
     z-index: 2;
 }
 
 .five{
-    font-family:'Univers LT Std-XBlackObl'; 
+    font-family:'JosefinSans'; 
     font-size: 65pt;
     position: absolute;
-    transform: translate(0,817px);
+    transform: translate(0,841px);
     color: rgb(255, 255, 255);
-    -webkit-text-stroke: 1px;
-    -webkit-text-stroke-color: black;
+    font-weight: bold;
     z-index: 2;
 }
 
 .six{
-    font-family:'Univers LT Std-XBlackObl'; 
+    font-family:'JosefinSans'; 
     font-size: 65pt;
     position: absolute;
-    transform: translate(0,917px);
+    transform: translate(0,941px);
     color: rgb(255, 255, 255);
-    -webkit-text-stroke: 1px;
-    -webkit-text-stroke-color: black;
+    font-weight: bold;
     z-index: 2;
 }
 
 .seven{
-    font-family:'Univers LT Std-XBlackObl'; 
+    font-family:'JosefinSans'; 
     font-size: 65pt;
     position: absolute;
-    transform: translate(0,1017px);
+    transform: translate(0,1041px);
     color: rgb(255, 255, 255);
-    -webkit-text-stroke: 1px;
-    -webkit-text-stroke-color: black;
+    font-weight: bold;
     z-index: 2;
 }
 
 .eight{
-    font-family:'Univers LT Std-XBlackObl'; 
+    font-family:'JosefinSans'; 
     font-size: 65pt;
     position: absolute;
-    transform: translate(0,1117px);
+    transform: translate(0,1141px);
     color: rgb(255, 255, 255);
-    -webkit-text-stroke: 1px;
-    -webkit-text-stroke-color: black;
+    font-weight: bold;
     z-index: 2;
 }
 
 .nine{
-    font-family:'Univers LT Std-XBlackObl'; 
+    font-family:'JosefinSans'; 
     font-size: 65pt;
     position: absolute;
-    transform: translate(0,1217px);
+    transform: translate(0,1241px);
     color: rgb(255, 255, 255);
-    -webkit-text-stroke: 1px;
-    -webkit-text-stroke-color: black;
+    font-weight: bold;
     z-index: 2;
 }
 
 .ten{
-    font-family:'Univers LT Std-XBlackObl'; 
+    font-family:'JosefinSans'; 
     font-size: 65pt;
     position: absolute;
-    transform: translate(0,417px);
+    transform: translate(0,441px);
     color: rgb(255, 255, 255);
-    -webkit-text-stroke: 1px;
-    -webkit-text-stroke-color: black;
+    font-weight: bold;
     z-index: 2;
 }
 
 .eleven{
-    font-family:'Univers LT Std-XBlackObl'; 
+    font-family:'JosefinSans'; 
     font-size: 65pt;
     position: absolute;
-    transform: translate(0,1417px);
+    transform: translate(0,1441px);
     color: rgb(255, 255, 255);
-    -webkit-text-stroke: 1px;
-    -webkit-text-stroke-color: black;
+    font-weight: bold;
     z-index: 2;
 }
 
 .twelve{
-    font-family:'Univers LT Std-XBlackObl'; 
+    font-family:'JosefinSans'; 
     font-size: 65pt;
     position: absolute;
-    transform: translate(0,1517px);
+    transform: translate(0,1541px);
     color: rgb(255, 255, 255);
-    -webkit-text-stroke: 1px;
-    -webkit-text-stroke-color: black;
+    font-weight: bold;
     z-index: 2;  
 }
 
 @font-face {
-    font-family:'UniversLTStd-Obl';
-    src:url('font/UniversLTStd-Obl.otf');
+    font-family:'JosefinSlab-Italic';
+    src:url('font/JosefinSlab-Italic-VariableFont_wght.ttf');
 }
 
 .sen1{
-    font-family:'UniversLTStd-Obl';
-    font-style: oblique;
+    font-family:'JosefinSlab-Italic';
     font-size: 16.5pt;
     position: absolute;
-    transform: translate(1320px,47px);
+    transform: translate(1320px,52px);
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 1px rgb(100, 100, 100), 0 0 0.7em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
     z-index: 2;
 }
 
 .sen2{
-    font-family:'UniversLTStd-Obl';
+    font-family:'JosefinSlab-Italic';
     font-size: 16.5pt;
     position: absolute;
-    transform: translate(1347px,147px);
+    transform: translate(1347px,152px);
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 1px rgb(100, 100, 100), 0 0 0.7em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
     z-index: 2;
 }
 
 .sen3{
-    font-family:'UniversLTStd-Obl';
+    font-family:'JosefinSlab-Italic';
     font-size: 16.5pt;
     position: absolute;
-    transform: translate(1388px,247px);
+    transform: translate(1388px,252px);
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 1px rgb(100, 100, 100), 0 0 0.7em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
     z-index: 2;
 }
 
 .sen4{
-    font-family:'UniversLTStd-Obl';
+    font-family:'JosefinSlab-Italic';
     font-size: 16.5pt;
     position: absolute;
-    transform: translate(1378px,347px);
+    transform: translate(1378px,352px);
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 1px rgb(100, 100, 100), 0 0 0.7em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
     z-index: 2;
 }
 
 .sen5{
-    font-family:'UniversLTStd-Obl';
+    font-family:'JosefinSlab-Italic';
     font-size: 16.5pt;
     position: absolute;
-    transform: translate(1347px,447px);
+    transform: translate(1347px,452px);
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 1px rgb(100, 100, 100), 0 0 0.7em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
     z-index: 2;
 }
 
 .sen6{
-    font-family:'UniversLTStd-Obl';
+    font-family:'JosefinSlab-Italic';
     font-size: 16.5pt;
     position: absolute;
-    transform: translate(1382px,547px);
+    transform: translate(1382px,552px);
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 1px rgb(100, 100, 100), 0 0 0.7em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
     z-index: 2;
 }
 
 .sen7{
-    font-family:'UniversLTStd-Obl';
+    font-family:'JosefinSlab-Italic';
     font-size: 16.5pt;
     position: absolute;
-    transform: translate(1347px,647px);
+    transform: translate(1347px,652px);
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 1px rgb(100, 100, 100), 0 0 0.7em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
     z-index: 2;
 }
 
 .sen8{
-    font-family:'UniversLTStd-Obl';
+    font-family:'JosefinSlab-Italic';
     font-size: 16.5pt;
     position: absolute;
-    transform: translate(1388px,747px);
+    transform: translate(1388px,752px);
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 1px rgb(100, 100, 100), 0 0 0.7em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
     z-index: 2;
 }
 
 .sen9{
-    font-family:'UniversLTStd-Obl';
+    font-family:'JosefinSlab-Italic';
     font-size: 16.5pt;
     position: absolute;
-    transform: translate(1388px,847px);
+    transform: translate(1388px,852px);
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 1px rgb(100, 100, 100), 0 0 0.7em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
     z-index:2;
 }
 
 .sen10{
-    font-family:'UniversLTStd-Obl';
+    font-family:'JosefinSlab-Italic';
     font-size: 16.5pt;
     position: absolute;
-    transform: translate(1378px,947px);
+    transform: translate(1378px,952px);
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 1px rgb(100, 100, 100), 0 0 0.7em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
     z-index:2;
 }
 
 .sen11{
-    font-family:'UniversLTStd-Obl';
+    font-family:'JosefinSlab-Italic';
     font-size: 16.5pt;
     position: absolute;
-    transform: translate(1358px,1047px);
+    transform: translate(1358px,1052px);
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 1px rgb(100, 100, 100), 0 0 0.7em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
     z-index:2;
 }
 
 .sen12{
-    font-family:'UniversLTStd-Obl';
+    font-family:'JosefinSlab-Italic';
     font-size: 16.5pt;
     position: absolute;
-    transform: translate(1347px,1147px);
+    transform: translate(1347px,1152px);
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 1px rgb(100, 100, 100), 0 0 0.7em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
     z-index:2;
 }
 
 .sen13{
-    font-family:'UniversLTStd-Obl';
+    font-family:'JosefinSlab-Italic';
     font-size: 16.5pt;
     position: absolute;
-    transform: translate(1382px,1247px);
+    transform: translate(1382px,1252px);
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 1px rgb(100, 100, 100), 0 0 0.7em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
     z-index:2;
 }
 
 .sen14{
-    font-family:'UniversLTStd-Obl';
+    font-family:'JosefinSlab-Italic';
     font-size: 16.5pt;
     position: absolute;
-    transform: translate(1388px,1347px);
+    transform: translate(1388px,1352px);
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 1px rgb(100, 100, 100), 0 0 0.7em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
     z-index:2;
@@ -434,30 +421,30 @@ h6{
 
 
 .sen15{
-    font-family:'UniversLTStd-Obl';
+    font-family:'JosefinSlab-Italic';
     font-size: 16.5pt;
     position: absolute;
-    transform: translate(1378px,1447px);
+    transform: translate(1378px,1452px);
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 1px rgb(100, 100, 100), 0 0 0.7em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
     z-index:2;
 }
 
 .sen16{
-    font-family:'UniversLTStd-Obl';
+    font-family:'JosefinSlab-Italic';
     font-size: 16.5pt;
     position: absolute;
-    transform: translate(1382px,1547px);
+    transform: translate(1382px,1552px);
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 1px rgb(100, 100, 100), 0 0 0.7em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
     z-index:2;
 }
 
 .sen17{
-    font-family:'UniversLTStd-Obl';
+    font-family:'JosefinSlab-Italic';
     font-size: 16.5pt;
     position: absolute;
-    transform: translate(1358px,1647px);
+    transform: translate(1358px,1652px);
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 1px rgb(100, 100, 100), 0 0 0.7em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
     z-index:2;
